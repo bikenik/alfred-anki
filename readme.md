@@ -10,7 +10,7 @@
 ```
 $ npm install --global alfred-anki
 ```
-[or as `*.alfredworkflow`](https://github.com/bikenik/alfred-anki/releases)
+or as [ `*.alfredworkflow`](https://github.com/bikenik/alfred-anki/releases)
 
 *Requires: [Node.js](https://nodejs.org) 7.6+, Alfred [Powerpack](https://www.alfredapp.com/powerpack/), [Anki](https://apps.ankiweb.net) intelligent flash cards, [AnkiConnect](https://ankiweb.net/shared/info/2055492159) plugin for Anki*
 
@@ -29,9 +29,10 @@ $ npm install --global alfred-anki
 ---
 - hit <kbd>⌃ + ↩</kbd> to remeber last input after created card.
 - hit <kbd>⌃ + ↩</kbd> one more time to toggle switch this option
+- hit <kbd>⌥ + ↩</kbd> to reset text from all fields
 
 ---
-- To use your own icons for your Model's fields just you should call the `png` files the same as fields `[name-of-field].png` and put it into `icons` folder of this Workflow directory. Recomended use two instance of each icons where second icon (with some mark) will be called as `[name-of-field]_marked.png` for "remeber last import" option.
+- To use your own icons for your Model's fields just you should call the `png` files the same as fields `[name-of-field].png` and put it into `icons` folder of this Workflow directory. Recommended use two instances of each icon where second icon (with some mark) will be called as `[name-of-field]_marked.png` for "remember last import" option.
 
 ## License
 
