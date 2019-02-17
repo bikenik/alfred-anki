@@ -1,5 +1,5 @@
-const Promise = require('promise')
 const {XMLHttpRequest} = require('xmlhttprequest')
+const Promise = require('promise')
 
 module.exports = function (action, version, params) {
 	return new Promise((resolve, reject) => {
