@@ -35,7 +35,8 @@
 		"jsonfile": "^5.0.0",
 		"p-map": "^2.0.0",
 		"run-applescript": "^3.2.0",
-		"xmlhttprequest": "^1.8.0"
+		"xmlhttprequest": "^1.8.0",
+		"promise": "^8.0.2"
 	},
 	"devDependencies": {
 		"ava": "^1.2.1",
