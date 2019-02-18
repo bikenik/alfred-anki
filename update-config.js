@@ -2,6 +2,7 @@ const alfy = require('alfy')
 
 const {modelExist} = require('./src/anki/anki-models')
 const modelFieldNames = require('./src/input/anki-model-fields.json')
+const {resetHeader} = require('./src/wf/header')
 
 const {env} = process
 const fields = alfy.config.get('fields')
@@ -11,6 +12,7 @@ if (env.config_variable) {
 }
 
 if (env.config_variable_model) {
+	resetHeader([{}]);
 	(async () => {
 		alfy.config.set(env.config_variable_model, env.config_value)
 		await modelExist(env.config_value)

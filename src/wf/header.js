@@ -9,7 +9,7 @@ const headerJson = require('../input/header.json')
 const fileHeader = './src/input/header.json'
 const currentConfig = alfy.config.get('fields')
 
-const newHeader = header => {
+const resetHeader = header => {
 	jsonfile.writeFile(fileHeader, header, {
 		spaces: 2
 	}, error => {
@@ -34,15 +34,15 @@ if (process.env.action === 'reset-for-next-card') {
 		}
 	}
 
-	newHeader([header])
+	resetHeader([header])
 } else if (process.env.action === 'reset') {
-	newHeader([{}])
-} else {
+	resetHeader([{}])
+} else if (process.argv[2]) {
 	const header = headerJson ? headerJson : [{}]
 	const currentData = JSON.parse(process.argv[2])
 
 	const currentProperty = Object.keys(currentData)[0]
-	console.log('mylog‼️', currentData[currentProperty])
+	console.log('log‼️', currentData[currentProperty])
 	header[0][currentProperty] = currentData[currentProperty]
 	jsonfile.writeFile(fileHeader, header, {
 		spaces: 2
@@ -52,3 +52,5 @@ if (process.env.action === 'reset-for-next-card') {
 		}
 	})
 }
+
+module.exports = {resetHeader}

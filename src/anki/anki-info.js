@@ -1,17 +1,13 @@
-/* eslint-disable camelcase */
 const alfy = require('alfy')
 const jsonfile = require('jsonfile')
 const WorkflowError = require('../utils/error')
 const decks = require('../anki/anki-decks')
 const {errorAction} = require('../utils/error')
-const header = require('../input/header.json')
 const {modelExist} = require('./anki-models')
 
 const fileAnkiDecks = './src/input/anki-decks.json'
 
 module.exports = async () => {
-	const checkEmtyField_1 = header[0].Front && header[0].Front.length > 0
-	const checkEmtyField_2 = header[0].Back && header[0].Back.length > 0
 	const introMessage = [{
 		subtitle: `🧰 ⇒ ${alfy.config.get('default-deck')} | ⚒ ⇒ ${alfy.config.get('default-model')} | press ↹ to choose another deck`
 	}]
@@ -33,7 +29,7 @@ module.exports = async () => {
 			valid: true,
 			subtitle: '🎉 \t   Add New Card \t🎉',
 			variables: {
-				action: checkEmtyField_1 && checkEmtyField_2 ? 'make-new-card' : false
+				action: 'make-new-card'
 			}
 		}
 	}

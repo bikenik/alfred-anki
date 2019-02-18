@@ -5,7 +5,7 @@ const ankiConnect = require('./anki-connect')
 const decks = require('./anki-decks')
 
 const nameOfDeck = alfy.config.get('default-deck')
-const {note_type} = process.env
+const note_type = alfy.config.get('default-model')
 
 const logResult = {
 	error: [],

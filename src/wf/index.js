@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 const fs = require('fs')
 const alfy = require('alfy')
 const ankiInfo = require('../anki/anki-info')
@@ -11,8 +10,6 @@ const handleFields = async () => {
 	const subtitle = 'toggle the option: remember last input'
 
 	const mods = field => {
-		const checkEmtyField_1 = header[0].Front && header[0].Front.length > 0
-		const checkEmtyField_2 = header[0].Back && header[0].Back.length > 0
 		return {
 			ctrl: {
 				subtitle,
@@ -22,7 +19,7 @@ const handleFields = async () => {
 				valid: true,
 				subtitle: '🎉 \t   Add New Card \t🎉',
 				variables: {
-					action: checkEmtyField_1 && checkEmtyField_2 ? 'make-new-card' : false
+					action: 'make-new-card'
 				}
 			}
 		}

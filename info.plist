@@ -659,9 +659,9 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string>bikeNik</string>
+	<string>bikenik</string>
 	<key>description</key>
-	<string>Create New Cards into any decks with any "Note Type".</string>
+	<string>anki card generator</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -2133,8 +2133,8 @@ To RESET</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0.2</string>
+	<string>1.0.3</string>
 	<key>webaddress</key>
-	<string>https://github.com/bikeNik/alfred-anki#readme</string>
+	<string>https://github.com/bikenik/alfred-anki#readme</string>
 </dict>
 </plist>

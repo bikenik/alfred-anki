@@ -9,12 +9,18 @@ const pMap = require('p-map')
 const ankiAddCard = require('./anki/anki-add-card')
 const config = require('./config')
 const modelFieldNames = require('./input/anki-model-fields.json')
-const header = require('./input/header.json')
+
+const header = jsonfile.readFileSync(config.input)
+
+let firstField = [Object.keys(header[0])[0]]
+if (firstField[0] === undefined) {
+	firstField = modelFieldNames[0]
+	header[0][firstField] = ''
+}
 
 async function main() {
 	setupDirStructure()
-	const inputCollection = jsonfile.readFileSync(config.input)
-	const cleanedInput = cleanInput(inputCollection)
+	const cleanedInput = cleanInput(header)
 	const output = await processInput(cleanedInput)
 	await ankiAddCard(output)
 }
@@ -25,9 +31,9 @@ function setupDirStructure() {
 
 function cleanInput(input) {
 	const deUndefinedArray = input.filter(card => {
-		return card.Front !== undefined
+		return card[firstField] !== undefined
 	})
-	const deDupedArray = removeDuplicates(deUndefinedArray, config.fields.front)
+	const deDupedArray = removeDuplicates(deUndefinedArray, config.fields[firstField])
 	return deDupedArray
 }
 
@@ -51,7 +57,7 @@ async function getData(card) {
 		if (key !== 'Video') {
 			let element = headerEdited[key]
 			const mdImg = /!\[(.*?)\]\(((http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|svg)).*?\)/gm
-			const mdLink = /(\s|^)\[(.*?)\]\(((http.*?\/\/|www)(.*?\....\/).*?)\)/gm
+			const mdLink = /(\s|^)\[(.*?)\]\((http.*?\/\/|www)(.*?)\)/gm
 			element = element.replace(mdLink, ' <a href="$3">$2</a>')
 			element = element.replace(mdImg, ' <img src="$2" alt="$1" />')
 			headerEdited[key] = element
