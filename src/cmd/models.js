@@ -66,7 +66,7 @@ module.exports = input => {
 
 	// value.split('-').forEach(x => {x.charAt(0).toUpperCase() + x.slice(1)}).join('-'),
 	const variable = variables[variableName]
-	let value = chunks.slice(2).join(' ')
+	const value = chunks.slice(2).join(' ')
 	const arrayOfDecks = ankiCards
 
 	if (chunks.length >= 3) {
@@ -76,9 +76,6 @@ module.exports = input => {
 			}
 
 			if (Object.values(arrayOfDecks).indexOf(value) === -1) {
-				value = value.split(' ')
-					.map(x => x.charAt(0).toUpperCase() + x.slice(1))
-					.join('-')
 				return variable.outputOptions.render(
 					value,
 					name => `!model ${variableName} ${name}`,

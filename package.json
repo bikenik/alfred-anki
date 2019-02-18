@@ -33,9 +33,11 @@
 	"dependencies": {
 		"alfy": "0.8.0",
 		"fs-extra": "^7.0.1",
+		"highlight.js": "^9.14.2",
 		"jsonfile": "^5.0.0",
-		"promise": "^8.0.2",
+		"markdown-it": "^8.4.2",
 		"p-map": "^2.0.0",
+		"promise": "^8.0.2",
 		"run-applescript": "^3.2.0",
 		"xmlhttprequest": "^1.8.0"
 	},

@@ -4,8 +4,24 @@
 
 'use strict'
 const fs = require('fs')
+const hljs = require('highlight.js')
 const jsonfile = require('jsonfile')
 const pMap = require('p-map')
+const md = require('markdown-it')({
+	highlight: (str, lang) => {
+		if (lang && hljs.getLanguage(lang)) {
+			try {
+				return '<pre class="hljs"><code>' +
+					hljs.highlight(lang, str, true).value +
+					'</code></pre>'
+			} catch (error) {
+				console.log(error)
+			}
+		}
+
+		return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>'
+	}
+})
 const ankiAddCard = require('./anki/anki-add-card')
 const config = require('./config')
 const modelFieldNames = require('./input/anki-model-fields.json')
@@ -55,11 +71,9 @@ async function getData(card) {
 	const headerEdited = header[0]
 	for (const key in headerEdited) {
 		if (key !== 'Video') {
-			let element = headerEdited[key]
-			const mdImg = /!\[(.*?)\]\(((http(s?):)([/|.|\w|\s|-])*\.(?:jpg|gif|png|svg)).*?\)/gm
-			const mdLink = /(\s|^)\[(.*?)\]\((http.*?\/\/|www)(.*?)\)/gm
-			element = element.replace(mdLink, ' <a href="$3">$2</a>')
-			element = element.replace(mdImg, ' <img src="$2" alt="$1" />')
+			let element = md.render(headerEdited[key])
+			const clozeDeletion = /\[\[(.*?)\]\]/gm
+			element = element.replace(clozeDeletion, '{{c1::$1}}')
 			headerEdited[key] = element
 		}
 	}
