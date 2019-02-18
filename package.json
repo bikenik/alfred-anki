@@ -1,6 +1,6 @@
 {
 	"name": "alfred-anki",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "anki card generator",
 	"license": "MIT",
 	"repository": "bikenik/alfred-anki",
