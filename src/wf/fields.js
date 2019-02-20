@@ -13,11 +13,12 @@ String.prototype.replaceAll = function (search, replacement) {
 
 for (const field of modelFieldNames) {
 	if (process.env.mode === field) {
+		const input = alfy.input.replace(/\\n(\s|)/g, '\n')
 		alfy.output([{
-			title: `${alfy.input}`,
+			title: input,
 			subtitle: `✏️ ${field}: ...`,
 			icon: {path: fs.existsSync(`./icons/${field}.png`) ? `./icons/${field}.png` : './icons/Flag.png'},
-			arg: JSON.stringify({[field]: alfy.input})
+			arg: JSON.stringify({[field]: input})
 		}])
 	}
 }
