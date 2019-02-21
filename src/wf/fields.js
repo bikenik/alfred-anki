@@ -17,6 +17,7 @@ for (const field of modelFieldNames) {
 		alfy.output([{
 			title: input,
 			subtitle: `✏️ ${field}: ...`,
+			text: {largetype: input},
 			icon: {path: fs.existsSync(`./icons/${field}.png`) ? `./icons/${field}.png` : './icons/Flag.png'},
 			arg: JSON.stringify({[field]: input})
 		}])

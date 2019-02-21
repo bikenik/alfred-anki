@@ -1,5 +1,21 @@
 /* eslint max-params: ["error", 9] */
 'use strict'
+const hljs = require('highlight.js')
+const md = require('markdown-it')({
+	highlight: (str, lang) => {
+		if (lang && hljs.getLanguage(lang)) {
+			try {
+				return '<pre class="hljs"><code>' +
+					hljs.highlight(lang, str, true).value +
+					'</code></pre>'
+			} catch (error) {
+				console.log(error)
+			}
+		}
+
+		return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>'
+	}
+}).use(require('markdown-it-mark'))
 
 const clearSentences = argSentence => argSentence.replace(/\s(\.|\?|!)/g, '$1')
 const largetypeFunc = (title, subtitle) => {
@@ -70,5 +86,16 @@ module.exports.Render = class {
 		}
 
 		this.getProperties = () => item
+	}
+}
+
+module.exports.markdownIt = arr => {
+	for (const key in arr) {
+		if (key !== 'Video') {
+			let element = md.render(arr[key])
+			const clozeDeletion = /\[\[(.*?)\]\]/gm
+			element = element.replace(clozeDeletion, '{{c1::$1}}')
+			arr[key] = element
+		}
 	}
 }

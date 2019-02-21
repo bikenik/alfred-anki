@@ -69,5 +69,6 @@ typings/
 #other
 .DS_Store
 mytest/
+anki-model-css.js
 
 # End of https://www.gitignore.io/api/node

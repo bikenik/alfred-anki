@@ -12,7 +12,7 @@ if (env.config_variable) {
 }
 
 if (env.config_variable_model) {
-	resetHeader([{}]);
+	resetHeader({});
 	(async () => {
 		alfy.config.set(env.config_variable_model, env.config_value)
 		await modelExist(env.config_value)

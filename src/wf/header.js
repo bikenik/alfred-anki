@@ -23,9 +23,9 @@ if (process.env.action === 'reset-for-next-card') {
 	const header = {}
 
 	for (const key2 in currentConfig) {
-		for (const key in headerJson[0]) {
+		for (const key in headerJson) {
 			if (key === key2 && currentConfig[key2] === 'rli') {
-				header[key] = headerJson[0][key]
+				header[key] = headerJson[key]
 			}
 
 			if (key === key2 && currentConfig[key2] === 'not_rli') {
@@ -34,16 +34,16 @@ if (process.env.action === 'reset-for-next-card') {
 		}
 	}
 
-	resetHeader([header])
+	resetHeader(header)
 } else if (process.env.action === 'reset') {
-	resetHeader([{}])
+	resetHeader({})
 } else if (process.argv[2]) {
-	const header = headerJson ? headerJson : [{}]
+	const header = headerJson ? headerJson : {}
 	const currentData = JSON.parse(process.argv[2])
 
 	const currentProperty = Object.keys(currentData)[0]
 	console.log('log‼️', currentData[currentProperty])
-	header[0][currentProperty] = currentData[currentProperty]
+	header[currentProperty] = currentData[currentProperty]
 	jsonfile.writeFile(fileHeader, header, {
 		spaces: 2
 	}, error => {

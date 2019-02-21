@@ -16,6 +16,7 @@ module.exports = async () => {
 	introMessage[0].autocomplete = '!deck default-deck '
 	introMessage[0].valid = false
 	introMessage[0].arg = ''
+	introMessage[0].quicklookurl = `${process.env.PWD}/src/input/preview/preview.html`
 	introMessage[0].mods = {
 		alt: {
 			subtitle: '❌ RESET',

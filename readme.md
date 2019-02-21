@@ -27,9 +27,13 @@ or as [ `*.alfredworkflow`](https://github.com/bikenik/alfred-anki/releases)
 
 > for link and image use markdown syntax: `![alt](http://example.img)` for image and `[text](http://example.com)` for link
 ---
+On the card fields:
+
 - hit <kbd>⌃ + ↩</kbd> to remeber last input after created card.
 - hit <kbd>⌃ + ↩</kbd> one more time to toggle switch this option
 - hit <kbd>⌥ + ↩</kbd> to reset text from all fields
+- hit <kbd>⇧</kbd>(shift) to preview parsed fields of card
+- for line break type '\n' (with space or without), also should be handy to use 'Alfred's snippets'.
 
 ---
 - To use your own icons for your Model's fields just you should call the `png` files the same as fields `[name-of-field].png` and put it into `icons` folder of this Workflow directory. Recommended use two instances of each icon where second icon (with some mark) will be called as `[name-of-field]_marked.png` for "remember last import" option.
