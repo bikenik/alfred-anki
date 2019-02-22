@@ -25,7 +25,11 @@ or as [ `*.alfredworkflow`](https://github.com/bikenik/alfred-anki/releases)
 - the same staps to edit.
 - type `:anki!`, to setting menu.
 
-> for link and image use markdown syntax: `![alt](http://example.img)` for image and `[text](http://example.com)` for link
+#### This workflow uses Markdown syntax: 
+- [markdow-it](https://markdown-it.github.io) library with [Syntax highlighting (highlighjs.org)](https://highlightjs.org/),
+- [\<ins> tag plugin for markdown-it](https://github.com/markdown-it/markdown-it-ins) `++inserted++ => <ins>inserted</ins>`,
+- [\<mark> tag plugin for markdown-it](https://github.com/markdown-it/markdown-it-mark) `==marked== => <mark>inserted</mark>`
+
 ---
 On the card fields:
 

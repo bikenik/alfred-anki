@@ -34,6 +34,12 @@ if (process.env.action === 'reset-for-next-card') {
 		}
 	}
 
+	if (alfy.config.get('Tag') === 'rli') {
+		header.Tag = headerJson.Tag
+	} else if (alfy.config.get('Tag') === 'not_rli') {
+		header.Tag = ''
+	}
+
 	resetHeader(header)
 } else if (process.env.action === 'reset') {
 	resetHeader({})

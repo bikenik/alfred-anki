@@ -54,3 +54,15 @@ tfoot td {
 	font-style: italic;
 	color: #a4b2bd;
 }
+
+p code {
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -o-pre-wrap;
+	background: #ddd;
+	margin: 0;
+	padding: 0.1em 0.3em;
+	border: none;
+	background: #ddd;
+}

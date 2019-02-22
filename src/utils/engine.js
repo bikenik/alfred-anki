@@ -15,7 +15,7 @@ const md = require('markdown-it')({
 
 		return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>'
 	}
-}).use(require('markdown-it-mark'))
+}).use(require('markdown-it-mark')).use(require('markdown-it-ins'))
 
 const clearSentences = argSentence => argSentence.replace(/\s(\.|\?|!)/g, '$1')
 const largetypeFunc = (title, subtitle) => {
@@ -91,7 +91,7 @@ module.exports.Render = class {
 
 module.exports.markdownIt = arr => {
 	for (const key in arr) {
-		if (key !== 'Video') {
+		if (key !== 'Tag') {
 			let element = md.render(arr[key])
 			const clozeDeletion = /\[\[(.*?)\]\]/gm
 			element = element.replace(clozeDeletion, '{{c1::$1}}')
