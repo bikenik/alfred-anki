@@ -42,6 +42,8 @@ On the card fields:
 ---
 - To use your own icons for your Model's fields just you should call the `png` files the same as fields `[name-of-field].png` and put it into `icons` folder of this Workflow directory. Recommended use two instances of each icon where second icon (with some mark) will be called as `[name-of-field]_marked.png` for "remember last import" option.
 
+<a href="https://www.buymeacoffee.com/cLMme6h" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
+
 ## License
 
 MIT © [bikenik](http://bikenik.org)
