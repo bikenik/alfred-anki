@@ -24,7 +24,7 @@ module.exports.modelExist = async (model = note_type) => {
 	try {
 		alfy.cache.set('validOutput', 'true')
 		const result = await ankiConnect('modelFieldNames', 6, {modelName: model})
-		jsonfile.writeFile(fileAnkiModelFields, result !== null ? result : [], {
+		jsonfile.writeFile(fileAnkiModelFields, result === null ? [] : result, {
 			spaces: 2
 		}, error => {
 			if (error !== null) {
