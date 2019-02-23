@@ -15,7 +15,11 @@ const md = require('markdown-it')({
 
 		return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>'
 	}
-}).use(require('markdown-it-mark')).use(require('markdown-it-ins'))
+})
+	.use(require('markdown-it-mark'))
+	.use(require('markdown-it-ins'))
+	.use(require('markdown-it-emoji'))
+	.use(require('markdown-it-abbr'))
 
 const clearSentences = argSentence => argSentence.replace(/\s(\.|\?|!)/g, '$1')
 const largetypeFunc = (title, subtitle) => {

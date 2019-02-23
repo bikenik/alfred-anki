@@ -38,6 +38,8 @@
 		"html-entities": "^1.2.1",
 		"jsonfile": "^5.0.0",
 		"markdown-it": "^8.4.2",
+		"markdown-it-abbr": "^1.0.4",
+		"markdown-it-emoji": "^1.4.0",
 		"markdown-it-ins": "^2.0.0",
 		"markdown-it-mark": "^2.0.0",
 		"p-map": "^2.0.0",

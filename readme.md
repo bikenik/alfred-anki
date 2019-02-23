@@ -10,7 +10,7 @@
 ```
 $ npm install --global alfred-anki
 ```
-or as [ `*.alfredworkflow`](https://github.com/bikenik/alfred-anki/releases)
+or as [ `anki.alfredworkflow`](https://github.com/bikenik/alfred-anki/releases)
 
 *Requires: [Node.js](https://nodejs.org) 7.6+, Alfred [Powerpack](https://www.alfredapp.com/powerpack/), [Anki](https://apps.ankiweb.net) intelligent flash cards, [AnkiConnect](https://ankiweb.net/shared/info/2055492159) plugin for Anki*
 
@@ -27,8 +27,14 @@ or as [ `*.alfredworkflow`](https://github.com/bikenik/alfred-anki/releases)
 
 #### This workflow uses Markdown syntax: 
 - [markdow-it](https://markdown-it.github.io) library with [Syntax highlighting (highlighjs.org)](https://highlightjs.org/),
-- [\<ins> tag plugin for markdown-it](https://github.com/markdown-it/markdown-it-ins) `++inserted++ => <ins>inserted</ins>`,
-- [\<mark> tag plugin for markdown-it](https://github.com/markdown-it/markdown-it-mark) `==marked== => <mark>inserted</mark>`
+	- [\<ins> tag plugin for markdown-it](https://github.com/markdown-it/markdown-it-ins) `++inserted++ => <ins>inserted</ins>`,
+	- [\<mark> tag plugin for markdown-it](https://github.com/markdown-it/markdown-it-mark) `==marked== => <mark>inserted</mark>`
+	- [Emojies](https://github.com/markdown-it/markdown-it-emoji) Shortcuts (emoticons)`: :-) :-( 8-) ;)`
+	- [\<abbr> tag plugin for markdown-it](https://github.com/markdown-it/markdown-it-abbr) : 
+	```
+	*[HTML]: Hyper Text Markup Language 
+	The HTML specification
+	```
 
 ---
 On the card fields:

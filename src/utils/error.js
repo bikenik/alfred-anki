@@ -19,7 +19,7 @@ module.exports.errorAction = reason => {
 	let title, subtitle, autocomplete, text
 	switch (reason) {
 		case 'main':
-			title = 'Searching without AnkiConnect'
+			title = 'Working without AnkiConnect'
 			subtitle = '↵ Continue work | ⇧↵ to open Anki. | ⌘L to see the stack trace'
 			text = {largetype: subtitle}
 			autocomplete = ''
