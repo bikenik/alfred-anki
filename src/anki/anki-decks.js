@@ -13,7 +13,7 @@ module.exports = () => {
 			return resultAll
 		} catch (error) {
 			alfy.cache.set('validOutput', 'false')
-			throw new WorkflowError(error, errorAction('main'))
+			throw new WorkflowError(error, error === 'failed to connect to AnkiConnect' ? errorAction('main') : error === 'collection is not available' ? errorAction('profile') : /model was not found/.test(error) ? errorAction('modelExist') : errorAction('main'))
 		}
 	}
 

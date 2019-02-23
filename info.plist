@@ -2133,7 +2133,7 @@ To RESET</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1.1</string>
+	<string>1.1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-anki#readme</string>
 </dict>

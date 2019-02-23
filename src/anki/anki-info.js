@@ -41,7 +41,7 @@ module.exports = async () => {
 	}
 
 	if (!ankiModelExist) {
-		return errorAction('main')
+		return errorAction('modelExist')
 	}
 
 	const ankiDecks = await decks()
