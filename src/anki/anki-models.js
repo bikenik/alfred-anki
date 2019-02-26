@@ -6,13 +6,13 @@ const WorkflowError = require('../utils/error')
 const {errorAction} = require('../utils/error')
 const ankiConnect = require('./anki-connect')
 
-const note_type = alfy.config.get('default-model')
+const note_type = alfy.config.get('default-model') ? Object.keys(alfy.config.get('default-model'))[0] : null
 
 const fileAnkiModelFields = './src/input/anki-model-fields.json'
 
 module.exports = async () => {
 	try {
-		const resultAll = await ankiConnect('modelNames', 6)
+		const resultAll = await ankiConnect('modelNamesAndIds', 6)
 		return resultAll
 	} catch (error) {
 		alfy.cache.set('validOutput', 'false')
@@ -39,10 +39,10 @@ module.exports.modelExist = async (model = note_type) => {
 }
 
 module.exports.render = async (pattern = '', autocomplete = () => undefined, ankiDecks, cmdIcon) => {
-	const out = await alfy.matches(pattern, ankiDecks)
+	const out = await alfy.matches(pattern, Object.getOwnPropertyNames(ankiDecks).sort())
 		.map(name => ({
 			title: name,
-			subtitle: '',
+			subtitle: ankiDecks[name],
 			autocomplete: autocomplete(name),
 			valid: false,
 			icon: {

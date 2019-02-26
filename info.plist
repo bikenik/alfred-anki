@@ -34,6 +34,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>036442F5-C034-4293-857F-1712F2AF0FFF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B4F8F2C1-AC96-4B6A-B0FD-BB6047F1DF6D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2C87ECB2-70AF-429F-90EA-C89E93DCB148</key>
 		<array>
 			<dict>
@@ -52,6 +65,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>46444138-C3AC-4805-A574-C1F1B70D7EDB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2DD4369C-2758-4547-9744-48EF75136302</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>95BE8DC6-2A86-4AEC-BCC4-4E9D459D4076</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -287,11 +313,63 @@
 				<false/>
 			</dict>
 		</array>
+		<key>5B3CCCFE-2E4F-45D4-ADFF-7D36030CB26D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FD14A9BC-87AB-4BCB-9D99-536259E7C614</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5C10A737-34D1-46EA-958E-C3B53C8B7E48</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2DD4369C-2758-4547-9744-48EF75136302</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>5CC8BE37-69CC-43B2-90D0-C1D3B03FCB5F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>B7625B29-64C5-4BA2-B97B-83BE2F4B6192</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>63BFDB58-03D2-44A3-9C5B-F3C9BD0ED4A2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8E0102E7-D522-4C41-8E3A-1FA998DABBF8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>69B50FC8-6EDF-494B-A303-F8030FD9D30C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E39BD28A-A134-4B70-B7D7-4E56C9AB894C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -374,6 +452,47 @@
 				<false/>
 			</dict>
 		</array>
+		<key>88B85E9A-9EB9-4093-B087-40E22BC8D3C8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D87B090C-A4A8-457E-AB37-B15AD648B073</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8E0102E7-D522-4C41-8E3A-1FA998DABBF8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D6A58C8E-76B1-4B21-A512-27424CF8E50B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>95BE8DC6-2A86-4AEC-BCC4-4E9D459D4076</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D00E50E5-A246-4577-9EA4-1D8272EBE61A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>97750D9D-0943-4182-83E3-A8372E8F5BC6</key>
+		<array/>
 		<key>9C59315A-EBF3-4624-A015-3CBD7CD88BE2</key>
 		<array>
 			<dict>
@@ -438,6 +557,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B4F8F2C1-AC96-4B6A-B0FD-BB6047F1DF6D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C37DF109-0BF3-48EA-94DE-289960A23B04</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B7625B29-64C5-4BA2-B97B-83BE2F4B6192</key>
 		<array>
 			<dict>
@@ -473,6 +605,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C38EC994-75BA-4C5F-A461-441C63F573CB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C37DF109-0BF3-48EA-94DE-289960A23B04</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C99AF1DB-C678-4C54-998B-6316288E7526</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -565,6 +710,26 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>5B3CCCFE-2E4F-45D4-ADFF-7D36030CB26D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>88B85E9A-9EB9-4093-B087-40E22BC8D3C8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>D4618291-BECE-42B6-8C73-378A5A52D4F4</key>
 		<array>
@@ -597,6 +762,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>752836EF-6B95-4274-9D66-D7E3F3B02588</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E39BD28A-A134-4B70-B7D7-4E56C9AB894C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>036442F5-C034-4293-857F-1712F2AF0FFF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -649,6 +827,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>73BE45C1-3769-4975-88B4-2E26E0BFCE9A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FD14A9BC-87AB-4BCB-9D99-536259E7C614</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B8286172-11CE-47C6-9815-BC7492B2A31B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -730,6 +921,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node src/wf/header.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9C7FC23C-28CE-4D31-B999-DA0989811A89</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>externaltriggerid</key>
 				<string>anki</string>
 				<key>passinputasargument</key>
@@ -758,29 +972,6 @@
 			<string>7602FF28-6A79-4BF2-8643-FBEF6A22EFB4</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/wf/header.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>9C7FC23C-28CE-4D31-B999-DA0989811A89</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -815,7 +1006,7 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>0157B150-6312-4618-9078-CB436756CFEE</string>
+			<string>41AD6E48-2472-43AD-B5DD-2AA26C5941EE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -834,7 +1025,7 @@
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>41AD6E48-2472-43AD-B5DD-2AA26C5941EE</string>
+			<string>0157B150-6312-4618-9078-CB436756CFEE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -869,12 +1060,12 @@
 				<key>matchmode</key>
 				<integer>2</integer>
 				<key>matchstring</key>
-				<string>^[^!]</string>
+				<string>\:\s[0-9]{13}</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>F21B5144-DC68-4065-8B4B-A399D4AD79E8</string>
+			<string>C3AC3CFC-E4C8-4B87-A6CD-9BD13BF9E3F7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -888,14 +1079,59 @@
 				<key>matchmode</key>
 				<integer>2</integer>
 				<key>matchstring</key>
-				<string>\:\s[0-9]{13}</string>
+				<string>^[^!]</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
-			<string>C3AC3CFC-E4C8-4B87-A6CD-9BD13BF9E3F7</string>
+			<string>F21B5144-DC68-4065-8B4B-A399D4AD79E8</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>choose your tag</string>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node ./src/wf/fields.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>index.js</string>
+				<key>subtext</key>
+				<string>Anki generator</string>
+				<key>title</key>
+				<string>TAGS</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>75FCBB30-CC79-454C-A038-B63F930D9BC8</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -954,51 +1190,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string>choose your tag</string>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node ./src/wf/fields.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>index.js</string>
-				<key>subtext</key>
-				<string>Anki generator</string>
-				<key>title</key>
-				<string>TAGS</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>75FCBB30-CC79-454C-A038-B63F930D9BC8</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>inputstring</key>
 				<string>{var:mode}</string>
 				<key>matchcasesensitive</key>
@@ -1039,23 +1230,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>!err:(.*?\.)\s.*</string>
-				<key>replacestring</key>
-				<string>$1</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>8786E11F-9169-4F88-863F-15A30263717C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>inputstring</key>
 				<string>{query}</string>
 				<key>matchcasesensitive</key>
@@ -1075,55 +1249,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>triggerid</key>
-				<string>anki</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>9C59315A-EBF3-4624-A015-3CBD7CD88BE2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/index.js "$1"</string>
-				<key>scriptargtype</key>
+				<key>matchmode</key>
 				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>matchstring</key>
+				<string>!err:(.*?\.)\s.*</string>
+				<key>replacestring</key>
+				<string>$1</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.replace</string>
 			<key>uid</key>
-			<string>B7625B29-64C5-4BA2-B97B-83BE2F4B6192</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>anki</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>332408A1-AB50-438A-B81C-53977A92FC49</string>
+			<string>8786E11F-9169-4F88-863F-15A30263717C</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1218,6 +1354,61 @@
 			<string>46444138-C3AC-4805-A574-C1F1B70D7EDB</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>triggerid</key>
+				<string>anki</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>9C59315A-EBF3-4624-A015-3CBD7CD88BE2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node src/index.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B7625B29-64C5-4BA2-B97B-83BE2F4B6192</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>anki</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<false/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>332408A1-AB50-438A-B81C-53977A92FC49</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1357,19 +1548,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>triggerid</key>
-				<string>refresh</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>FAB4AF74-7BA2-4AB4-9ACE-FE846E7EECE0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<true/>
 				<key>escaping</key>
@@ -1393,6 +1571,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>triggerid</key>
+				<string>refresh</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>FAB4AF74-7BA2-4AB4-9ACE-FE846E7EECE0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1410,6 +1601,32 @@
 			<string>16E77EDF-F1CB-4F48-BB70-A5EBC420693C</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>function run(argv) {
+  var query = process.env;
+  return query;
+}</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>7</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>97750D9D-0943-4182-83E3-A8372E8F5BC6</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1469,29 +1686,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>./node_modules/.bin/run-node src/anki/anki-delete-deck.js</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>5871888C-AD47-4C28-91F0-F3B2B4AEAE5D</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>externaltriggerid</key>
 				<string>anki</string>
 				<key>passinputasargument</key>
@@ -1532,6 +1726,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>./node_modules/.bin/run-node src/anki/anki-delete-deck.js</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>5871888C-AD47-4C28-91F0-F3B2B4AEAE5D</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>inputstring</key>
 				<string>{var:action}</string>
 				<key>matchcasesensitive</key>
@@ -1551,19 +1768,21 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>externaltriggerid</key>
-				<string>refresh</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:config_value}</string>
+				<key>title</key>
+				<string>Current is</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
+			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
-			<string>4B7B78BA-8332-4539-8C65-4673A7A2E94E</string>
+			<string>CFC28381-4945-4F56-B327-968C1DA67A3B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1593,21 +1812,19 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:config_value}</string>
-				<key>title</key>
-				<string>Current is</string>
+				<key>externaltriggerid</key>
+				<string>refresh</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.output.callexternaltrigger</string>
 			<key>uid</key>
-			<string>CFC28381-4945-4F56-B327-968C1DA67A3B</string>
+			<string>4B7B78BA-8332-4539-8C65-4673A7A2E94E</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1652,6 +1869,67 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>103</integer>
+				<key>script</key>
+				<string>profileName=$1
+tmp=$RANDOM
+path=/Users/bikenik/Library/Application\ Support/Anki2/"$profileName"/collection.media/$tmp.png
+/usr/local/bin/pngpaste "$path"
+printf $tmp</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FD14A9BC-87AB-4BCB-9D99-536259E7C614</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>keyword</key>
+				<string>img</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>5C10A737-34D1-46EA-958E-C3B53C8B7E48</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>![img]({query}.png)</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>B8286172-11CE-47C6-9815-BC7492B2A31B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>externaltriggerid</key>
 				<string>anki</string>
 				<key>passinputasargument</key>
@@ -1688,10 +1966,258 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:focusedapp}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>com.runningwithcrayons.Alfred-3</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>2DD4369C-2758-4547-9744-48EF75136302</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
 			<string>A64BC663-F93F-4363-8F54-5A92B480F3FD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>mode</key>
+					<string>getProfileName</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>95BE8DC6-2A86-4AEC-BCC4-4E9D459D4076</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:mode}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>getProfileName</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>5B3CCCFE-2E4F-45D4-ADFF-7D36030CB26D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>keyword</key>
+				<string>cz</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>63BFDB58-03D2-44A3-9C5B-F3C9BD0ED4A2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{{c1::{cursor}}}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>D6A58C8E-76B1-4B21-A512-27424CF8E50B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>reset</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>D87B090C-A4A8-457E-AB37-B15AD648B073</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:focusedapp}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>com.runningwithcrayons.Alfred-3</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>8E0102E7-D522-4C41-8E3A-1FA998DABBF8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>action</key>
+					<string>reset-for-next-card</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>88B85E9A-9EB9-4093-B087-40E22BC8D3C8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>C99AF1DB-C678-4C54-998B-6316288E7526</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<true/>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>keyword</key>
+				<string>cho</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>69B50FC8-6EDF-494B-A303-F8030FD9D30C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{clipboard}</string>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>036442F5-C034-4293-857F-1712F2AF0FFF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\s</string>
+				<key>replacestring</key>
+				<string>; </string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>C37DF109-0BF3-48EA-94DE-289960A23B04</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{var:focusedapp}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>com.runningwithcrayons.Alfred-3</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>E39BD28A-A134-4B70-B7D7-4E56C9AB894C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>\n</string>
+				<key>replacestring</key>
+				<string> </string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.replace</string>
+			<key>uid</key>
+			<string>B4F8F2C1-AC96-4B6A-B0FD-BB6047F1DF6D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1705,7 +2231,7 @@
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>1040</integer>
+			<integer>1250</integer>
 			<key>ypos</key>
 			<integer>260</integer>
 		</dict>
@@ -1720,12 +2246,19 @@
 			<key>ypos</key>
 			<integer>1250</integer>
 		</dict>
+		<key>036442F5-C034-4293-857F-1712F2AF0FFF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>410</integer>
+			<key>ypos</key>
+			<integer>1850</integer>
+		</dict>
 		<key>0E9A7DA0-E3E9-4F4F-96BE-032F1CB4FE95</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>1650</integer>
+			<integer>1860</integer>
 			<key>ypos</key>
 			<integer>210</integer>
 		</dict>
@@ -1741,7 +2274,7 @@
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>1520</integer>
+			<integer>1730</integer>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
@@ -1750,7 +2283,7 @@
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>1370</integer>
+			<integer>1580</integer>
 			<key>ypos</key>
 			<integer>670</integer>
 		</dict>
@@ -1763,12 +2296,23 @@
 			<key>ypos</key>
 			<integer>590</integer>
 		</dict>
+		<key>2DD4369C-2758-4547-9744-48EF75136302</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>activeapp is Current WF</string>
+			<key>xpos</key>
+			<integer>320</integer>
+			<key>ypos</key>
+			<integer>1560</integer>
+		</dict>
 		<key>332408A1-AB50-438A-B81C-53977A92FC49</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>870</integer>
+			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>560</integer>
 		</dict>
@@ -1856,21 +2400,49 @@
 			<key>ypos</key>
 			<integer>1220</integer>
 		</dict>
+		<key>5B3CCCFE-2E4F-45D4-ADFF-7D36030CB26D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>860</integer>
+			<key>ypos</key>
+			<integer>1560</integer>
+		</dict>
+		<key>5C10A737-34D1-46EA-958E-C3B53C8B7E48</key>
+		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>1530</integer>
+		</dict>
 		<key>5CC8BE37-69CC-43B2-90D0-C1D3B03FCB5F</key>
 		<dict>
 			<key>xpos</key>
-			<integer>1040</integer>
+			<integer>1250</integer>
 			<key>ypos</key>
 			<integer>590</integer>
+		</dict>
+		<key>63BFDB58-03D2-44A3-9C5B-F3C9BD0ED4A2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>1680</integer>
 		</dict>
 		<key>65611F88-01F2-4A24-A10E-4192327061B4</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>1520</integer>
+			<integer>1730</integer>
 			<key>ypos</key>
 			<integer>640</integer>
+		</dict>
+		<key>69B50FC8-6EDF-494B-A303-F8030FD9D30C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>1820</integer>
 		</dict>
 		<key>6A1870C0-B298-4F2B-AE7C-43BDBC5609F7</key>
 		<dict>
@@ -1926,18 +2498,55 @@ ANKI-REFRESH</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>1440</integer>
+			<integer>1650</integer>
 			<key>ypos</key>
 			<integer>510</integer>
+		</dict>
+		<key>88B85E9A-9EB9-4093-B087-40E22BC8D3C8</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>...
+To RESET</string>
+			<key>xpos</key>
+			<integer>860</integer>
+			<key>ypos</key>
+			<integer>1710</integer>
+		</dict>
+		<key>8E0102E7-D522-4C41-8E3A-1FA998DABBF8</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>activeapp is Current WF</string>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>1710</integer>
 		</dict>
 		<key>924BB709-C6AF-41F4-86D4-FE8E4D00E6B1</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>1520</integer>
+			<integer>1730</integer>
 			<key>ypos</key>
 			<integer>780</integer>
+		</dict>
+		<key>95BE8DC6-2A86-4AEC-BCC4-4E9D459D4076</key>
+		<dict>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>1560</integer>
+		</dict>
+		<key>97750D9D-0943-4182-83E3-A8372E8F5BC6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>860</integer>
+			<key>ypos</key>
+			<integer>970</integer>
 		</dict>
 		<key>9C59315A-EBF3-4624-A015-3CBD7CD88BE2</key>
 		<dict>
@@ -1954,14 +2563,14 @@ ANKI-REFRESH</string>
 			<string>...
 RESET FIELDS</string>
 			<key>xpos</key>
-			<integer>870</integer>
+			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
 		<key>9F0DF1B9-583D-4458-850A-82C5852CB2AD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>870</integer>
+			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>400</integer>
 		</dict>
@@ -1983,22 +2592,43 @@ RESET FIELDS</string>
 			<key>ypos</key>
 			<integer>590</integer>
 		</dict>
+		<key>B4F8F2C1-AC96-4B6A-B0FD-BB6047F1DF6D</key>
+		<dict>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>1850</integer>
+		</dict>
 		<key>B7625B29-64C5-4BA2-B97B-83BE2F4B6192</key>
 		<dict>
 			<key>note</key>
 			<string>...
 MAKE CARD</string>
 			<key>xpos</key>
-			<integer>1150</integer>
+			<integer>1360</integer>
 			<key>ypos</key>
 			<integer>560</integer>
+		</dict>
+		<key>B8286172-11CE-47C6-9815-BC7492B2A31B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1280</integer>
+			<key>ypos</key>
+			<integer>1530</integer>
+		</dict>
+		<key>C37DF109-0BF3-48EA-94DE-289960A23B04</key>
+		<dict>
+			<key>xpos</key>
+			<integer>570</integer>
+			<key>ypos</key>
+			<integer>1850</integer>
 		</dict>
 		<key>C38EC994-75BA-4C5F-A461-441C63F573CB</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>1370</integer>
+			<integer>1580</integer>
 			<key>ypos</key>
 			<integer>810</integer>
 		</dict>
@@ -2007,9 +2637,16 @@ MAKE CARD</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>1440</integer>
+			<integer>1650</integer>
 			<key>ypos</key>
 			<integer>370</integer>
+		</dict>
+		<key>C99AF1DB-C678-4C54-998B-6316288E7526</key>
+		<dict>
+			<key>xpos</key>
+			<integer>650</integer>
+			<key>ypos</key>
+			<integer>1820</integer>
 		</dict>
 		<key>CF402DBC-4552-4802-9382-6A2D51DEC2A5</key>
 		<dict>
@@ -2041,7 +2678,7 @@ MAKE CARD</string>
 			<key>colorindex</key>
 			<integer>2</integer>
 			<key>xpos</key>
-			<integer>1150</integer>
+			<integer>1360</integer>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
@@ -2057,9 +2694,25 @@ MAKE CARD</string>
 		<key>D4618291-BECE-42B6-8C73-378A5A52D4F4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>870</integer>
+			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>100</integer>
+		</dict>
+		<key>D6A58C8E-76B1-4B21-A512-27424CF8E50B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>420</integer>
+			<key>ypos</key>
+			<integer>1680</integer>
+		</dict>
+		<key>D87B090C-A4A8-457E-AB37-B15AD648B073</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>2</integer>
+			<key>xpos</key>
+			<integer>1040</integer>
+			<key>ypos</key>
+			<integer>1680</integer>
 		</dict>
 		<key>D911C0B6-8115-460C-89BA-9C9A7C0CB9D6</key>
 		<dict>
@@ -2069,7 +2722,7 @@ MAKE CARD</string>
 			<string>...
 To RESET</string>
 			<key>xpos</key>
-			<integer>1560</integer>
+			<integer>1770</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
@@ -2081,6 +2734,17 @@ To RESET</string>
 			<integer>470</integer>
 			<key>ypos</key>
 			<integer>1120</integer>
+		</dict>
+		<key>E39BD28A-A134-4B70-B7D7-4E56C9AB894C</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>note</key>
+			<string>activeapp is Current WF</string>
+			<key>xpos</key>
+			<integer>330</integer>
+			<key>ypos</key>
+			<integer>1850</integer>
 		</dict>
 		<key>EEB1004E-BFEB-4865-B8D1-21868B7BF8E7</key>
 		<dict>
@@ -2098,7 +2762,7 @@ To RESET</string>
 			<key>colorindex</key>
 			<integer>5</integer>
 			<key>xpos</key>
-			<integer>1370</integer>
+			<integer>1580</integer>
 			<key>ypos</key>
 			<integer>370</integer>
 		</dict>
@@ -2107,7 +2771,7 @@ To RESET</string>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<integer>1370</integer>
+			<integer>1580</integer>
 			<key>ypos</key>
 			<integer>510</integer>
 		</dict>
@@ -2127,13 +2791,25 @@ To RESET</string>
 			<key>note</key>
 			<string>Errors from anki-add-card.js</string>
 			<key>xpos</key>
-			<integer>1520</integer>
+			<integer>1730</integer>
 			<key>ypos</key>
 			<integer>480</integer>
 		</dict>
+		<key>FD14A9BC-87AB-4BCB-9D99-536259E7C614</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1040</integer>
+			<key>ypos</key>
+			<integer>1530</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>profile_name</key>
+		<string>English</string>
 	</dict>
 	<key>version</key>
-	<string>1.1.3</string>
+	<string>1.1.4</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-anki#readme</string>
 </dict>

@@ -3,7 +3,7 @@
 const jsonfile = require('jsonfile')
 const alfy = require('alfy')
 
-const config = require('../config')
+const config = require('../config').cmd
 const decks = require('../anki/anki-decks')
 const models = require('../anki/anki-models')
 const WorkflowError = require('../utils/error')
@@ -71,7 +71,7 @@ const outputVariables = pattern => {
 		pattern = ''
 	}
 
-	const vars = Object.keys(config.decks.refresh)
+	const vars = Object.keys(config.refresh)
 
 	const mapper = key => ({
 		title: key,
@@ -81,7 +81,7 @@ const outputVariables = pattern => {
 		icon: {path: './icons/refresh.png'}
 	})
 
-	const out = alfy.matches(pattern, Object.keys(config.decks.refresh)).map(mapper)
+	const out = alfy.matches(pattern, Object.keys(config.refresh)).map(mapper)
 
 	return out.length === 0 ? vars.map(mapper) : out
 }

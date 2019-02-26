@@ -3,12 +3,15 @@
 
 'use strict'
 const fs = require('fs')
+const alfy = require('alfy')
 const jsonfile = require('jsonfile')
 const pMap = require('p-map')
 const {markdownIt} = require('./utils/engine')
 const ankiAddCard = require('./anki/anki-add-card')
-const config = require('./config')
+const config = require('./config').card
 const modelFieldNames = require('./input/anki-model-fields.json')
+
+const modelId = alfy.config.get('default-model') ? alfy.config.get('default-model')[Object.keys(alfy.config.get('default-model'))[0]] : null
 
 const header = jsonfile.readFileSync(config.input)
 
@@ -18,10 +21,10 @@ if (firstField[0] === undefined) {
 	header[firstField] = ''
 }
 
-async function main() {
+async function main(id) {
 	setupDirStructure()
 	const cleanedInput = cleanInput(header)
-	const output = await processInput(cleanedInput)
+	const output = await processInput(cleanedInput, id)
 	await ankiAddCard(output)
 }
 
@@ -37,10 +40,10 @@ function cleanInput(input) {
 	return deDupedArray
 }
 
-async function processInput(input) {
+async function processInput(input, id) {
 	const mapper = async card => {
-		const data = await getData(card)
-		const modifiedCard = card
+		const data = await getData(card[id])
+		const modifiedCard = card[id]
 		Object.assign(modifiedCard, data)
 		return modifiedCard
 	}
@@ -68,4 +71,4 @@ function removeDuplicates(myArr, prop) {
 	})
 }
 
-main()
+main(modelId)

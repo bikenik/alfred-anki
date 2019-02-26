@@ -3,7 +3,7 @@
 const fs = require('fs-extra')
 const alfy = require('alfy')
 
-const config = require('../config')
+const config = require('../config').cmd
 const WorkflowError = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
 
@@ -37,7 +37,7 @@ const outputVariables = pattern => {
 		pattern = ''
 	}
 
-	const vars = Object.keys(config.decks.refresh)
+	const vars = Object.keys(config.refresh)
 
 	const mapper = key => ({
 		title: key,
@@ -47,7 +47,7 @@ const outputVariables = pattern => {
 		icon: {path: './icons/night_and_day.png'}
 	})
 
-	const out = alfy.matches(pattern, Object.keys(config.decks.theme)).map(mapper)
+	const out = alfy.matches(pattern, Object.keys(config.theme)).map(mapper)
 
 	return out.length === 0 ? vars.map(mapper) : out
 }

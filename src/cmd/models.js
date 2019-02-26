@@ -4,9 +4,9 @@ const alfy = require('alfy')
 const WorkflowError = require('../utils/error')
 const {errorAction} = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
-const config = require('../config')
+const config = require('../config').cmd
 const models = require('../anki/anki-models')
-const ankiCards = require('../input/anki-models.json')
+const ankiModels = require('../input/anki-models.json')
 
 const variables = {
 	'default-model': {
@@ -21,18 +21,18 @@ const outputVariables = pattern => {
 		pattern = ''
 	}
 
-	const vars = Object.keys(config.decks.defaults)
+	const vars = Object.keys(config.defaults)
 
 	const mapper = key => ({
 		title: `${key} ⇒ ${
-			alfy.config.get(key) === undefined ? config.decks.models['default-model'] : alfy.config.get(key)}`,
+			Object.keys(alfy.config.get(key))[0] === undefined ? config.models['default-model'] : Object.keys(alfy.config.get(key))[0]}`,
 		subtitle: '↵ pick out another model...',
 		valid: false,
 		autocomplete: `!model ${key} `,
 		icon: {path: './icons/Model.png'}
 	})
 
-	const out = alfy.matches(pattern, Object.keys(config.decks.models)).map(mapper)
+	const out = alfy.matches(pattern, Object.keys(config.models)).map(mapper)
 
 	return out.length === 0 ? vars.map(mapper) : out
 }
@@ -67,7 +67,7 @@ module.exports = input => {
 	// value.split('-').forEach(x => {x.charAt(0).toUpperCase() + x.slice(1)}).join('-'),
 	const variable = variables[variableName]
 	const value = chunks.slice(2).join(' ')
-	const arrayOfDecks = ankiCards
+	const arrayOfDecks = ankiModels
 
 	if (chunks.length >= 3) {
 		return (async () => {
@@ -75,7 +75,7 @@ module.exports = input => {
 				throw new WorkflowError('Models was not found, check your Anki profile', errorAction('!model models'))
 			}
 
-			if (Object.values(arrayOfDecks).indexOf(value) === -1) {
+			if (Object.getOwnPropertyNames(arrayOfDecks).indexOf(value) === -1) {
 				return variable.outputOptions.render(
 					value,
 					name => `!model ${variableName} ${name}`,
@@ -94,7 +94,9 @@ module.exports = input => {
 							action: 'set',
 							/* eslint-disable camelcase */
 							config_variable_model: variableName,
-							config_value: value
+							config_value: JSON.stringify({
+								[value]: arrayOfDecks[value].toString()
+							})
 							/* eslint-enable camelcase */
 						}
 					}

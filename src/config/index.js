@@ -1,7 +1,24 @@
 /* eslint camelcase: ["error", {properties: "never"}] */
 /* eslint-disable camelcase */
+const fs = require('fs')
 const os = require('os')
+const alfy = require('alfy')
 const {modelExist} = require('../anki/anki-models')
+const ankiConnect = require('../anki/anki-connect')
+
+const user = os.userInfo()
+
+const getProfileName = async () => {
+	try {
+		const getProfileName = await ankiConnect('loadProfileName', 6)
+		alfy.config.set('profile-name', getProfileName)
+	} catch (error) {
+		if (error === 'unsupported action') {
+			const getProfileName = fs.existsSync(`${user.homedir}/Library/Application Support/Anki2/${process.env.profile_name}/collection.media`) ? process.env.profile_name : false
+			alfy.config.set('profile-name', getProfileName)
+		}
+	}
+}
 
 /* -----------------------------
 To prevent unknown case that invokes this error when settings new deck or model
@@ -18,36 +35,41 @@ try {
 }
 /* --------------------------- */
 
-const user = os.userInfo()
-const {path_to_ankiMedia} = process.env
-const fields = {}
+const path_to_ankiMedia = () => alfy.config.get('profile-name') ? `/Library/Application Support/Anki2/${alfy.config.get('profile-name')}/collection.media/` : ''
 
-for (const field of modelFieldNames) {
-	fields[field] = field
+const fields = () => {
+	const fields = {}
+	modelFieldNames.forEach(x => {
+		fields[x] = x
+	})
+	return fields
 }
 
-module.exports = {
+const card = {
 	concurrency: 10,
 	input: './src/input/header.json',
-	fields,
+	fields: fields(),
 	get mediaDir() {
-		return user.homedir + path_to_ankiMedia
-	},
-	decks: {
-		defaults: {
-			'default-deck': 'Default'
-		},
-		delete: {
-			'delete-deck': 'choose ...'
-		},
-		refresh: {
-			'refreshing...': 'refreshings ...'
-		},
-		theme: {
-			'change theme': 'toogle ...'
-		},
-		models: {
-			'default-model': 'choose ...'
-		}
+		return user.homedir + path_to_ankiMedia()
 	}
 }
+
+const cmd = {
+	defaults: {
+		'default-deck': 'Default'
+	},
+	delete: {
+		'delete-deck': 'choose ...'
+	},
+	refresh: {
+		'refreshing...': 'refreshings ...'
+	},
+	theme: {
+		'change theme': 'toogle ...'
+	},
+	models: {
+		'default-model': 'choose ...'
+	}
+}
+
+module.exports = {getProfileName, card, cmd}

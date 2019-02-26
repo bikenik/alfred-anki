@@ -2,23 +2,8 @@ const alfy = require('alfy')
 
 const {modelExist} = require('./src/anki/anki-models')
 const modelFieldNames = require('./src/input/anki-model-fields.json')
-const {resetHeader} = require('./src/wf/header')
 
 const {env} = process
-const fields = alfy.config.get('fields')
-
-if (env.config_variable) {
-	alfy.config.set(env.config_variable, env.config_value)
-}
-
-if (env.config_variable_model) {
-	resetHeader({});
-	(async () => {
-		alfy.config.set(env.config_variable_model, env.config_value)
-		await modelExist(env.config_value)
-		alfy.config.set('fields', {})
-	})()
-}
 
 const toggle = (field, fields) => {
 	switch (fields[field]) {
@@ -29,17 +14,44 @@ const toggle = (field, fields) => {
 	}
 }
 
-for (const field of modelFieldNames) {
-	if (fields[field] === undefined) {
-		fields[field] = 'not_rli'
+const updateFieldsConfig = async newFields => {
+	const fields = alfy.config.get('fields')
+	for (const field of newFields) {
+		const modelId = alfy.config.get('default-model') ? alfy.config.get('default-model')[Object.keys(alfy.config.get('default-model'))[0]] : null
+		if (fields[modelId] === undefined) {
+			fields[modelId] = {}
+		}
+
+		if (fields[modelId][field] === undefined) {
+			fields[modelId][field] = 'not_rli'
+		}
+
+		if (env[field] === field) {
+			toggle(field, fields[modelId])
+		}
 	}
 
-	if (env[field] === field) {
-		toggle(field, fields)
-	}
+	alfy.config.set('fields', fields)
 }
 
-alfy.config.set('fields', fields)
+if (alfy.config.get('fields') === undefined) {
+	alfy.config.set('fields', {})
+}
+
+if (env.config_variable_deck) {
+	alfy.config.set(env.config_variable_deck, env.config_value)
+}
+
+if (env.config_variable_model) {
+	(async () => {
+		alfy.config.set(env.config_variable_model, JSON.parse(env.config_value))
+		const newFields = await modelExist(Object.keys(alfy.config.get('default-model'))[0])
+		await updateFieldsConfig(newFields)
+	})()
+} else {
+	updateFieldsConfig(modelFieldNames)
+}
+
 if (alfy.config.get('Tag') === undefined) {
 	alfy.config.set('Tag', 'not_rli')
 }
@@ -51,4 +63,8 @@ if (env.Tag === 'Tag') {
 		default: alfy.config.set('Tag', 'not_rli')
 			break
 	}
+}
+
+if (env.mode === 'getProfileName') {
+	process.stdout.write(alfy.config.get('profile-name'))
 }

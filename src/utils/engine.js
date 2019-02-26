@@ -93,13 +93,15 @@ module.exports.Render = class {
 	}
 }
 
-module.exports.markdownIt = arr => {
-	for (const key in arr) {
+module.exports.markdownIt = obj => {
+	for (const key in obj) {
 		if (key !== 'Tag') {
-			let element = md.render(arr[key])
+			let element = md.render(obj[key])
 			const clozeDeletion = /\[\[(.*?)\]\]/gm
+			const removePtag = /^<p>|<\/p>$/gm
 			element = element.replace(clozeDeletion, '{{c1::$1}}')
-			arr[key] = element
+			element = element.replace(removePtag, '')
+			obj[key] = element
 		}
 	}
 }

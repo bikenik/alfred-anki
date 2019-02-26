@@ -30,10 +30,18 @@ module.exports.errorAction = reason => {
 			text = {largetype: subtitle}
 			break
 		case 'modelExist':
-			title = `model "${alfy.config.get('default-model')}" was not found`
-			subtitle = `Pres ⇤ (tab) to pick out exist note type. Or ⇧↵ to open Anki & choose another profile which has current note type.`
-			text = {largetype: subtitle}
-			autocomplete = '!models default-model '
+			if (alfy.config.get('default-model')) {
+				title = `model "${Object.keys(alfy.config.get('default-model'))[0]}" was not found`
+				subtitle = `Pres ⇤ (tab) to pick out exist note type. Or ⇧↵ to open Anki & choose another profile which has current note type.`
+				text = {largetype: subtitle}
+				autocomplete = '!models default-model '
+			} else {
+				title = `no model selected`
+				subtitle = `Pres ⇤ (tab) to pick out exist note type. Or ⇧↵ to open Anki & choose another profile which has current note type.`
+				text = {largetype: subtitle}
+				autocomplete = '!models default-model '
+			}
+
 			break
 		case '!deck decks':
 			title = null

@@ -2,7 +2,7 @@
 const fs = require('fs-extra')
 const alfy = require('alfy')
 const runApplescript = require('run-applescript')
-const set = require('./src/cmd/set')
+const set = require('./src/cmd/decks')
 const del = require('./src/cmd/del')
 const refresh = require('./src/cmd/refresh')
 const theme = require('./src/cmd/theme')
@@ -63,6 +63,6 @@ if (!alfy.cache.get('start-PID')) {
 			alfy.output(out)
 		}
 	} catch (error) {
-		alfy.output([await ankiInfo()])
+		alfy.output(await ankiInfo())
 	}
 })()

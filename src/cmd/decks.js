@@ -4,7 +4,7 @@ const alfy = require('alfy')
 const WorkflowError = require('../utils/error')
 const {errorAction} = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
-const config = require('../config')
+const config = require('../config').cmd
 const decks = require('../anki/anki-decks')
 const ankiCards = require('../input/anki-cards.json')
 
@@ -21,18 +21,18 @@ const outputVariables = pattern => {
 		pattern = ''
 	}
 
-	const vars = Object.keys(config.decks.defaults)
+	const vars = Object.keys(config.defaults)
 
 	const mapper = key => ({
 		title: `${key} ⇒ ${
-			alfy.config.get(key) === undefined ? config.decks.defaults['default-deck'] : alfy.config.get(key)}`,
+			alfy.config.get(key) === undefined ? config.defaults['default-deck'] : alfy.config.get(key)}`,
 		subtitle: '↵ pick out another ...',
 		valid: false,
 		autocomplete: `!deck ${key} `,
 		icon: {path: './icons/deck-settings.png'}
 	})
 
-	const out = alfy.matches(pattern, Object.keys(config.decks.defaults)).map(mapper)
+	const out = alfy.matches(pattern, Object.keys(config.defaults)).map(mapper)
 
 	return out.length === 0 ? vars.map(mapper) : out
 }
@@ -96,7 +96,7 @@ module.exports = input => {
 						variables: {
 							action: 'set',
 							/* eslint-disable camelcase */
-							config_variable: variableName,
+							config_variable_deck: variableName,
 							config_value: value
 							/* eslint-enable camelcase */
 						}

@@ -1,15 +1,12 @@
-/* eslint-disable capitalized-comments */
 /* eslint-disable camelcase */
 
 const alfy = require('alfy')
 const WorkflowError = require('../utils/error')
 const {errorAction} = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
-const config = require('../config')
+const config = require('../config').cmd
 const decks = require('../anki/anki-decks')
-// const arrayOfDecks = require('../input/anki-decks.json')
 const ankiCards = require('../input/anki-cards.json')
-// const {launch} = require('./cards-info-launch')
 
 const variables = {
 	'delete-deck': {
@@ -24,7 +21,7 @@ const outputVariables = pattern => {
 		pattern = ''
 	}
 
-	const vars = Object.keys(config.decks.delete)
+	const vars = Object.keys(config.delete)
 
 	const mapper = key => ({
 		title: key,
@@ -34,7 +31,7 @@ const outputVariables = pattern => {
 		icon: {path: './icons/delete.png'}
 	})
 
-	const out = alfy.matches(pattern, Object.keys(config.decks.delete)).map(mapper)
+	const out = alfy.matches(pattern, Object.keys(config.delete)).map(mapper)
 
 	return out.length === 0 ? vars.map(mapper) : out
 }
