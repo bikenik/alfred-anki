@@ -37,6 +37,14 @@ module.exports = async () => {
 		}
 	}]
 	const ankiModelExist = await modelExist()
+	if (alfy.cache.get('new-profile') === true) {
+		if (alfy.cache.get('refresh-done') === false) {
+			return [errorAction('waiting-for-refresh')]
+		}
+
+		return [errorAction('new-profile')]
+	}
+
 	if (ankiModelExist && ankiModelExist.message) {
 		return [ankiModelExist]
 	}

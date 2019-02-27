@@ -11,7 +11,11 @@ const user = os.userInfo()
 const getProfileName = async () => {
 	try {
 		const getProfileName = await ankiConnect('loadProfileName', 6)
-		alfy.config.set('profile-name', getProfileName)
+		if (alfy.config.get('profile-name') !== getProfileName) {
+			alfy.config.set('profile-name', getProfileName)
+			alfy.cache.set('new-profile', true)
+			alfy.cache.set('refresh-done', false)
+		}
 	} catch (error) {
 		if (error === 'unsupported action') {
 			const getProfileName = fs.existsSync(`${user.homedir}/Library/Application Support/Anki2/${process.env.profile_name}/collection.media`) ? process.env.profile_name : false

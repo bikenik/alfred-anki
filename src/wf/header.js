@@ -67,5 +67,3 @@ if (process.env.action === 'reset-for-next-card') {
 		}
 	})
 }
-
-module.exports = {resetHeader}

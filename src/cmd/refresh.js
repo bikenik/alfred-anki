@@ -59,6 +59,7 @@ const runUpdate = async () => {
 			process.stderr.write(error)
 		}
 	})
+	alfy.cache.set('refresh-done', true)
 }
 
 if (process.argv[2] === 'runref') {

@@ -18,6 +18,9 @@ module.exports = class WorkflowError extends Error {
 module.exports.errorAction = reason => {
 	let title, subtitle, autocomplete, text
 	switch (reason) {
+		case 'waiting-for-refresh':
+			title = 'waiting-for-refresh'
+			break
 		case 'main':
 			title = 'Working without AnkiConnect'
 			subtitle = '↵ Continue work | ⇧↵ to open Anki. | ⌘L to see the stack trace'
@@ -42,6 +45,12 @@ module.exports.errorAction = reason => {
 				autocomplete = '!models default-model '
 			}
 
+			break
+		case 'new-profile':
+			title = `Select model for [👤${alfy.config.get('profile-name')}] profile`
+			subtitle = `Pres ⇤ (tab) to pick out exist note type. Or ⇧↵ to open Anki & choose another profile which has current note type.`
+			text = {largetype: subtitle}
+			autocomplete = '!models default-model '
 			break
 		case '!deck decks':
 			title = null

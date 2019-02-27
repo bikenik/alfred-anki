@@ -45,6 +45,7 @@ if (env.config_variable_deck) {
 if (env.config_variable_model) {
 	(async () => {
 		alfy.config.set(env.config_variable_model, JSON.parse(env.config_value))
+		alfy.cache.set('new-profile', false)
 		const newFields = await modelExist(Object.keys(alfy.config.get('default-model'))[0])
 		await updateFieldsConfig(newFields)
 	})()
