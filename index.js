@@ -7,10 +7,11 @@ const del = require('./src/cmd/del')
 const refresh = require('./src/cmd/refresh')
 const theme = require('./src/cmd/theme')
 const models = require('./src/cmd/models')
+const profiles = require('./src/cmd/profiles')
 const ankiInfo = require('./src/anki/anki-info')
 const wf = require('./src/wf')
 
-const commands = [set, models, del, refresh, theme]
+const commands = [set, models, profiles, del, refresh, theme]
 const option = async input => {
 	for (const command of commands) {
 		if (command.match(input)) {

@@ -40,7 +40,7 @@ module.exports.render = async (pattern = '', autocomplete = () => undefined, ank
 				alfredworkflow: {
 					variables: {
 						action: 'set',
-						config_variable: 'default-deck',
+						config_variable_deck: 'default-deck',
 						config_value: pattern
 					}
 				}

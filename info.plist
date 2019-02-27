@@ -402,18 +402,7 @@
 			</dict>
 		</array>
 		<key>73BE45C1-3769-4975-88B4-2E26E0BFCE9A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>23469AB0-E9C4-4A2C-AD6B-DAF5C42504B0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
+		<array/>
 		<key>75FCBB30-CC79-454C-A038-B63F930D9BC8</key>
 		<array>
 			<dict>
@@ -1158,9 +1147,9 @@
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1572864</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>A</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1589,23 +1578,6 @@
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
 			<string>FAB4AF74-7BA2-4AB4-9ACE-FE846E7EECE0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>'{query}', {allvars}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
-			<key>uid</key>
-			<string>23469AB0-E9C4-4A2C-AD6B-DAF5C42504B0</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2306,13 +2278,6 @@ printf $tmp</string>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
-		<key>23469AB0-E9C4-4A2C-AD6B-DAF5C42504B0</key>
-		<dict>
-			<key>xpos</key>
-			<integer>1020</integer>
-			<key>ypos</key>
-			<integer>850</integer>
-		</dict>
 		<key>2C87ECB2-70AF-429F-90EA-C89E93DCB148</key>
 		<dict>
 			<key>colorindex</key>
@@ -2838,13 +2803,8 @@ To RESET</string>
 			<integer>1530</integer>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<dict>
-		<key>profile_name</key>
-		<string>English</string>
-	</dict>
 	<key>version</key>
-	<string>1.1.4</string>
+	<string>1.1.5</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-anki#readme</string>
 </dict>

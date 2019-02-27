@@ -42,6 +42,12 @@ if (env.config_variable_deck) {
 	alfy.config.set(env.config_variable_deck, env.config_value)
 }
 
+if (env.config_variable_profile) {
+	alfy.config.set(env.config_variable_profile, env.config_value)
+	alfy.cache.set('new-profile', true)
+	alfy.cache.set('refresh-done', false)
+}
+
 if (env.config_variable_model) {
 	(async () => {
 		alfy.config.set(env.config_variable_model, JSON.parse(env.config_value))
@@ -67,5 +73,5 @@ if (env.Tag === 'Tag') {
 }
 
 if (env.mode === 'getProfileName') {
-	process.stdout.write(alfy.config.get('profile-name'))
+	process.stdout.write(alfy.config.get('default-profile'))
 }

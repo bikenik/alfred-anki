@@ -11,7 +11,7 @@ const model = alfy.config.get('default-model') ? Object.keys(alfy.config.get('de
 
 module.exports = async () => {
 	const introMessage = [{
-		subtitle: alfy.config.get('default-deck') ? `🧰 ⇒ ${alfy.config.get('default-deck')}\t\t⚒ ⇒ ${model}\t\t👤 ${alfy.config.get('profile-name')}` : '',
+		subtitle: alfy.config.get('default-deck') ? `🧰 ${alfy.config.get('default-deck')}    ⚒ ${model}    👤 ${alfy.config.get('default-profile')}` : '',
 		title: alfy.config.get('default-deck') ? 'Create new card (⌘ + ↵)' : 'press ↵ or ↹ to select default deck',
 		icon: {path: './icons/anki.png'},
 		autocomplete: '!deck default-deck ',
@@ -29,7 +29,7 @@ module.exports = async () => {
 			},
 			cmd: {
 				valid: true,
-				subtitle: '🎉 \t   Add New Card \t🎉',
+				subtitle: '\t   Add New Card \t🎉',
 				variables: {
 					action: 'make-new-card'
 				}
@@ -37,6 +37,10 @@ module.exports = async () => {
 		}
 	}]
 	const ankiModelExist = await modelExist()
+	if (alfy.config.get('default-profile') === false) {
+		return [errorAction('alfred-settings')]
+	}
+
 	if (alfy.cache.get('new-profile') === true) {
 		if (alfy.cache.get('refresh-done') === false) {
 			return [errorAction('waiting-for-refresh')]

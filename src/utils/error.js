@@ -47,8 +47,8 @@ module.exports.errorAction = reason => {
 
 			break
 		case 'new-profile':
-			title = `Select model for [👤${alfy.config.get('profile-name')}] profile`
-			subtitle = `Pres ⇤ (tab) to pick out exist note type. Or ⇧↵ to open Anki & choose another profile which has current note type.`
+			title = `Select model for [👤${alfy.config.get('default-profile')}] profile`
+			subtitle = `Pres ⇤ (tab) to pick out exist profile. Or ⇧↵ to open Anki & choose another profile which has current note type.`
 			text = {largetype: subtitle}
 			autocomplete = '!models default-model '
 			break
@@ -69,6 +69,11 @@ module.exports.errorAction = reason => {
 			subtitle = '↵ Continue work | ⇧↵ to open Anki. | ⌘L to see the stack trace'
 			text = {largetype: subtitle}
 			autocomplete = '!del '
+			break
+		case 'alfred-settings':
+			title = 'set some Profile name in Alfred settings'
+			subtitle = `Pres ⇤ (tab) to pick out the profile by the given value.. Or ⇧↵ to open Anki & choose another`
+			autocomplete = '!profile default-profile '
 			break
 		default:
 			break
@@ -105,7 +110,7 @@ module.exports.errorOut = err => {
 	messages.push('Activate this item to try again.')
 	messages.push('⌘L to see the stack trace')
 	return [{
-		title: err.title ? err.title : `${err.message}`,
+		title: err.title ? err.title : `${err.message} `,
 		subtitle: err.subtitle ? err.subtitle : messages.join(' | '),
 		autocomplete: err.autocomplete ? err.autocomplete : '',
 		icon: err.icon ? err.icon : {
@@ -114,7 +119,7 @@ module.exports.errorOut = err => {
 		valid: err.valid ? err.valid : true,
 		variables: err.variables ? err.variables : {},
 		text: {
-			largetype: `${err.subtitle}\n\n${err.stack}`,
+			largetype: `${err.subtitle} \n\n${err.stack} `,
 			copy: err.stack
 		},
 		mods: err.mods ? err.mods : {

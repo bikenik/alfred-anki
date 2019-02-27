@@ -31,7 +31,7 @@ const handleFields = async () => {
 			},
 			cmd: {
 				valid: true,
-				subtitle: '🎉 \t   Add New Card \t🎉',
+				subtitle: '\t   Add New Card \t🎉',
 				variables: {
 					action: 'make-new-card'
 				}

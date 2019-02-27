@@ -4,23 +4,22 @@ const fs = require('fs')
 const os = require('os')
 const alfy = require('alfy')
 const {modelExist} = require('../anki/anki-models')
+const WorkflowError = require('../utils/error')
+const {errorAction} = require('../utils/error')
 const ankiConnect = require('../anki/anki-connect')
 
 const user = os.userInfo()
 
 const getProfileName = async () => {
 	try {
-		const getProfileName = await ankiConnect('loadProfileName', 6)
-		if (alfy.config.get('profile-name') !== getProfileName) {
-			alfy.config.set('profile-name', getProfileName)
-			alfy.cache.set('new-profile', true)
-			alfy.cache.set('refresh-done', false)
+		const getProfileName = fs.existsSync(`${user.homedir}/Library/Application Support/Anki2/${alfy.config.get('default-profile')}/collection.media`) ? alfy.config.get('default-profile') : false
+		if (typeof (getProfileName) === 'string') {
+			await ankiConnect('loadProfile', 6, {name: alfy.config.get('default-profile')})
+		} else {
+			alfy.config.set('default-profile', getProfileName)
 		}
 	} catch (error) {
-		if (error === 'unsupported action') {
-			const getProfileName = fs.existsSync(`${user.homedir}/Library/Application Support/Anki2/${process.env.profile_name}/collection.media`) ? process.env.profile_name : false
-			alfy.config.set('profile-name', getProfileName)
-		}
+		throw new WorkflowError(error, errorAction('main'))
 	}
 }
 
@@ -39,7 +38,7 @@ try {
 }
 /* --------------------------- */
 
-const path_to_ankiMedia = () => alfy.config.get('profile-name') ? `/Library/Application Support/Anki2/${alfy.config.get('profile-name')}/collection.media/` : ''
+const path_to_ankiMedia = () => alfy.config.get('default-profile') ? `/Library/Application Support/Anki2/${alfy.config.get('default-profile')}/collection.media/` : ''
 
 const fields = () => {
 	const fields = {}
@@ -73,6 +72,9 @@ const cmd = {
 	},
 	models: {
 		'default-model': 'choose ...'
+	},
+	profiles: {
+		'default-profile': 'choose ...'
 	}
 }
 
