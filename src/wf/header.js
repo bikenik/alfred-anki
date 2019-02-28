@@ -42,6 +42,7 @@ if (process.env.action === 'reset-for-next-card' && modelId) {
 	}
 
 	headerJson[modelId] = header
+	resetHeader(headerJson)
 } else if (process.env.action === 'reset') {
 	headerJson[modelId] = {}
 	resetHeader(headerJson)

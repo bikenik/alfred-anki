@@ -44,7 +44,8 @@ On the card fields:
 - hit <kbd>⌥ + ↩</kbd> to reset text from all fields
 - hit <kbd>⇧</kbd>(shift) to preview parsed fields of card
 - for line break type '\n' (with space or without), also should be handy to use 'Alfred's snippets'.
-
+- to add imag from clipboard use Alfred snippet <kbd>>>img</kbd> needs install [`pngpaste`](https://github.com/jcsalterego/pngpaste)
+- check out another snippets 
 ---
 - To use your own icons for your Model's fields just you should call the `png` files the same as fields `[name-of-field].png` and put it into `icons` folder of this Workflow directory. Recommended use two instances of each icon where second icon (with some mark) will be called as `[name-of-field]_marked.png` for "remember last import" option.
 

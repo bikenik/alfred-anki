@@ -34,19 +34,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>036442F5-C034-4293-857F-1712F2AF0FFF</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>B4F8F2C1-AC96-4B6A-B0FD-BB6047F1DF6D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>16E77EDF-F1CB-4F48-BB70-A5EBC420693C</key>
 		<array/>
 		<key>2C87ECB2-70AF-429F-90EA-C89E93DCB148</key>
@@ -67,16 +54,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>46444138-C3AC-4805-A574-C1F1B70D7EDB</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>9E55014D-75F0-4B4A-9529-DF8E0B5F4E68</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -378,20 +355,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8E0102E7-D522-4C41-8E3A-1FA998DABBF8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>69B50FC8-6EDF-494B-A303-F8030FD9D30C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>E39BD28A-A134-4B70-B7D7-4E56C9AB894C</string>
+				<string>D6A58C8E-76B1-4B21-A512-27424CF8E50B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -466,32 +430,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FB1372F3-E68F-43E3-B6CA-1C112CB95F12</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>88B85E9A-9EB9-4093-B087-40E22BC8D3C8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D87B090C-A4A8-457E-AB37-B15AD648B073</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>8E0102E7-D522-4C41-8E3A-1FA998DABBF8</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D6A58C8E-76B1-4B21-A512-27424CF8E50B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -590,19 +528,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B4F8F2C1-AC96-4B6A-B0FD-BB6047F1DF6D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C37DF109-0BF3-48EA-94DE-289960A23B04</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B7625B29-64C5-4BA2-B97B-83BE2F4B6192</key>
 		<array>
 			<dict>
@@ -638,19 +563,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C38EC994-75BA-4C5F-A461-441C63F573CB</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>C37DF109-0BF3-48EA-94DE-289960A23B04</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>C99AF1DB-C678-4C54-998B-6316288E7526</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -753,16 +665,6 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>88B85E9A-9EB9-4093-B087-40E22BC8D3C8</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 		</array>
 		<key>D4618291-BECE-42B6-8C73-378A5A52D4F4</key>
 		<array>
@@ -795,19 +697,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>752836EF-6B95-4274-9D66-D7E3F3B02588</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>E39BD28A-A134-4B70-B7D7-4E56C9AB894C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>036442F5-C034-4293-857F-1712F2AF0FFF</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1180,9 +1069,9 @@
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>1572864</integer>
+				<integer>0</integer>
 				<key>hotstring</key>
-				<string>A</string>
+				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1575,23 +1464,6 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>924BB709-C6AF-41F4-86D4-FE8E4D00E6B1</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>'{query}', {allvars}</string>
-				<key>cleardebuggertext</key>
-				<false/>
-				<key>processoutputs</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.debug</string>
-			<key>uid</key>
-			<string>9E55014D-75F0-4B4A-9529-DF8E0B5F4E68</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2100,12 +1972,31 @@ printf $tmp</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>inputstring</key>
+				<string>{var:focusedapp}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>com.runningwithcrayons.Alfred-3</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>276BF00D-2634-4E5E-8170-0229205F108B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
 				<string>{{c1::{cursor}}}</string>
 				<key>transient</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
@@ -2113,164 +2004,6 @@ printf $tmp</string>
 			<string>D6A58C8E-76B1-4B21-A512-27424CF8E50B</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>reset</string>
-				<key>passinputasargument</key>
-				<true/>
-				<key>passvariables</key>
-				<true/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>D87B090C-A4A8-457E-AB37-B15AD648B073</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{var:focusedapp}</string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>com.runningwithcrayons.Alfred-3</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>8E0102E7-D522-4C41-8E3A-1FA998DABBF8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>variables</key>
-				<dict>
-					<key>action</key>
-					<string>reset-for-next-card</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>88B85E9A-9EB9-4093-B087-40E22BC8D3C8</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>C99AF1DB-C678-4C54-998B-6316288E7526</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>focusedappvariable</key>
-				<true/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>keyword</key>
-				<string>cho</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>69B50FC8-6EDF-494B-A303-F8030FD9D30C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{clipboard}</string>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>036442F5-C034-4293-857F-1712F2AF0FFF</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\s</string>
-				<key>replacestring</key>
-				<string>; </string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>C37DF109-0BF3-48EA-94DE-289960A23B04</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>inputstring</key>
-				<string>{var:focusedapp}</string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>com.runningwithcrayons.Alfred-3</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>E39BD28A-A134-4B70-B7D7-4E56C9AB894C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>matchmode</key>
-				<integer>1</integer>
-				<key>matchstring</key>
-				<string>\n</string>
-				<key>replacestring</key>
-				<string> </string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.replace</string>
-			<key>uid</key>
-			<string>B4F8F2C1-AC96-4B6A-B0FD-BB6047F1DF6D</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -2297,13 +2030,6 @@ printf $tmp</string>
 			<key>ypos</key>
 			<integer>1250</integer>
 		</dict>
-		<key>036442F5-C034-4293-857F-1712F2AF0FFF</key>
-		<dict>
-			<key>xpos</key>
-			<integer>410</integer>
-			<key>ypos</key>
-			<integer>1850</integer>
-		</dict>
 		<key>0E9A7DA0-E3E9-4F4F-96BE-032F1CB4FE95</key>
 		<dict>
 			<key>colorindex</key>
@@ -2329,6 +2055,15 @@ printf $tmp</string>
 			<key>ypos</key>
 			<integer>340</integer>
 		</dict>
+		<key>276BF00D-2634-4E5E-8170-0229205F108B</key>
+		<dict>
+			<key>colorindex</key>
+			<integer>3</integer>
+			<key>xpos</key>
+			<integer>580</integer>
+			<key>ypos</key>
+			<integer>1680</integer>
+		</dict>
 		<key>2C87ECB2-70AF-429F-90EA-C89E93DCB148</key>
 		<dict>
 			<key>colorindex</key>
@@ -2351,8 +2086,6 @@ printf $tmp</string>
 		<dict>
 			<key>colorindex</key>
 			<integer>3</integer>
-			<key>note</key>
-			<string>activeapp is Current WF</string>
 			<key>xpos</key>
 			<integer>320</integer>
 			<key>ypos</key>
@@ -2438,7 +2171,7 @@ printf $tmp</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>560</integer>
+			<integer>570</integer>
 			<key>ypos</key>
 			<integer>1560</integer>
 		</dict>
@@ -2487,13 +2220,6 @@ printf $tmp</string>
 			<integer>1730</integer>
 			<key>ypos</key>
 			<integer>640</integer>
-		</dict>
-		<key>69B50FC8-6EDF-494B-A303-F8030FD9D30C</key>
-		<dict>
-			<key>xpos</key>
-			<integer>170</integer>
-			<key>ypos</key>
-			<integer>1820</integer>
 		</dict>
 		<key>6A1870C0-B298-4F2B-AE7C-43BDBC5609F7</key>
 		<dict>
@@ -2553,29 +2279,6 @@ ANKI-REFRESH</string>
 			<key>ypos</key>
 			<integer>510</integer>
 		</dict>
-		<key>88B85E9A-9EB9-4093-B087-40E22BC8D3C8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>...
-To RESET</string>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>1710</integer>
-		</dict>
-		<key>8E0102E7-D522-4C41-8E3A-1FA998DABBF8</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>activeapp is Current WF</string>
-			<key>xpos</key>
-			<integer>330</integer>
-			<key>ypos</key>
-			<integer>1710</integer>
-		</dict>
 		<key>924BB709-C6AF-41F4-86D4-FE8E4D00E6B1</key>
 		<dict>
 			<key>colorindex</key>
@@ -2595,7 +2298,7 @@ To RESET</string>
 		<key>95BE8DC6-2A86-4AEC-BCC4-4E9D459D4076</key>
 		<dict>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>410</integer>
 			<key>ypos</key>
 			<integer>1560</integer>
 		</dict>
@@ -2618,13 +2321,6 @@ RESET FIELDS</string>
 			<key>ypos</key>
 			<integer>230</integer>
 		</dict>
-		<key>9E55014D-75F0-4B4A-9529-DF8E0B5F4E68</key>
-		<dict>
-			<key>xpos</key>
-			<integer>890</integer>
-			<key>ypos</key>
-			<integer>790</integer>
-		</dict>
 		<key>9F0DF1B9-583D-4458-850A-82C5852CB2AD</key>
 		<dict>
 			<key>xpos</key>
@@ -2644,7 +2340,7 @@ RESET FIELDS</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>470</integer>
+			<integer>480</integer>
 			<key>ypos</key>
 			<integer>1560</integer>
 		</dict>
@@ -2656,13 +2352,6 @@ RESET FIELDS</string>
 			<integer>480</integer>
 			<key>ypos</key>
 			<integer>590</integer>
-		</dict>
-		<key>B4F8F2C1-AC96-4B6A-B0FD-BB6047F1DF6D</key>
-		<dict>
-			<key>xpos</key>
-			<integer>480</integer>
-			<key>ypos</key>
-			<integer>1850</integer>
 		</dict>
 		<key>B7625B29-64C5-4BA2-B97B-83BE2F4B6192</key>
 		<dict>
@@ -2681,13 +2370,6 @@ MAKE CARD</string>
 			<key>ypos</key>
 			<integer>1530</integer>
 		</dict>
-		<key>C37DF109-0BF3-48EA-94DE-289960A23B04</key>
-		<dict>
-			<key>xpos</key>
-			<integer>570</integer>
-			<key>ypos</key>
-			<integer>1850</integer>
-		</dict>
 		<key>C38EC994-75BA-4C5F-A461-441C63F573CB</key>
 		<dict>
 			<key>colorindex</key>
@@ -2705,13 +2387,6 @@ MAKE CARD</string>
 			<integer>1650</integer>
 			<key>ypos</key>
 			<integer>370</integer>
-		</dict>
-		<key>C99AF1DB-C678-4C54-998B-6316288E7526</key>
-		<dict>
-			<key>xpos</key>
-			<integer>650</integer>
-			<key>ypos</key>
-			<integer>1820</integer>
 		</dict>
 		<key>CF402DBC-4552-4802-9382-6A2D51DEC2A5</key>
 		<dict>
@@ -2766,16 +2441,7 @@ MAKE CARD</string>
 		<key>D6A58C8E-76B1-4B21-A512-27424CF8E50B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
-			<key>ypos</key>
-			<integer>1680</integer>
-		</dict>
-		<key>D87B090C-A4A8-457E-AB37-B15AD648B073</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>2</integer>
-			<key>xpos</key>
-			<integer>1040</integer>
+			<integer>400</integer>
 			<key>ypos</key>
 			<integer>1680</integer>
 		</dict>
@@ -2799,17 +2465,6 @@ To RESET</string>
 			<integer>470</integer>
 			<key>ypos</key>
 			<integer>1120</integer>
-		</dict>
-		<key>E39BD28A-A134-4B70-B7D7-4E56C9AB894C</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>note</key>
-			<string>activeapp is Current WF</string>
-			<key>xpos</key>
-			<integer>330</integer>
-			<key>ypos</key>
-			<integer>1850</integer>
 		</dict>
 		<key>EEB1004E-BFEB-4865-B8D1-21868B7BF8E7</key>
 		<dict>
@@ -2869,7 +2524,7 @@ To RESET</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1.6</string>
+	<string>1.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-anki#readme</string>
 </dict>
