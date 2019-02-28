@@ -74,6 +74,16 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>9E55014D-75F0-4B4A-9529-DF8E0B5F4E68</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>2DD4369C-2758-4547-9744-48EF75136302</key>
 		<array>
@@ -1569,6 +1579,23 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>'{query}', {allvars}</string>
+				<key>cleardebuggertext</key>
+				<false/>
+				<key>processoutputs</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.debug</string>
+			<key>uid</key>
+			<string>9E55014D-75F0-4B4A-9529-DF8E0B5F4E68</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.hidealfred</string>
 			<key>uid</key>
@@ -2590,6 +2617,13 @@ RESET FIELDS</string>
 			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>230</integer>
+		</dict>
+		<key>9E55014D-75F0-4B4A-9529-DF8E0B5F4E68</key>
+		<dict>
+			<key>xpos</key>
+			<integer>890</integer>
+			<key>ypos</key>
+			<integer>790</integer>
 		</dict>
 		<key>9F0DF1B9-583D-4458-850A-82C5852CB2AD</key>
 		<dict>

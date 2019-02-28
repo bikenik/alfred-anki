@@ -1,5 +1,4 @@
 'use strict'
-const fs = require('fs-extra')
 const alfy = require('alfy')
 const runApplescript = require('run-applescript')
 const set = require('./src/cmd/decks')
@@ -43,7 +42,6 @@ if (!alfy.cache.get('start-PID')) {
 
 (async () => {
 	if (alfy.config.get('theme') === undefined) {
-		await fs.copy(`${process.env.PWD}/icons/for-light-theme/`, `${process.env.PWD}/icons/`)
 		alfy.config.set('theme', 'dark')
 	}
 

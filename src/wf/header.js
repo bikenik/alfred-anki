@@ -20,7 +20,7 @@ const resetHeader = header => {
 	})
 }
 
-if (process.env.action === 'reset-for-next-card') {
+if (process.env.action === 'reset-for-next-card' && modelId) {
 	const header = {}
 
 	for (const key2 in currentConfig) {
@@ -42,7 +42,6 @@ if (process.env.action === 'reset-for-next-card') {
 	}
 
 	headerJson[modelId] = header
-	resetHeader(headerJson)
 } else if (process.env.action === 'reset') {
 	headerJson[modelId] = {}
 	resetHeader(headerJson)

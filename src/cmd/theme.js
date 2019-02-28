@@ -19,6 +19,10 @@ const copyFiles = async () => {
 				alfy.config.set('theme', 'light')
 				await fs.copy(`${process.env.PWD}/icons/for-light-theme/`, `${process.env.PWD}/icons/`)
 				break
+			case 'light':
+				alfy.config.set('theme', 'dark')
+				await fs.copy(`${process.env.PWD}/icons/for-dark-theme/`, `${process.env.PWD}/icons/`)
+				break
 
 			default:
 				alfy.config.set('theme', 'dark')

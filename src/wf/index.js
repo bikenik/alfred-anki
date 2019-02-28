@@ -17,7 +17,6 @@ const inFile = './src/input/preview/preview.hbs'
 const outFile = `${config.mediaDir}_preview.html`
 const source = fs.readFileSync(inFile, 'utf8')
 const modelId = alfy.config.get('default-model') ? alfy.config.get('default-model')[Object.keys(alfy.config.get('default-model'))[0]] : null
-const currentValueOfHeader = jsonfile.readFileSync('./src/input/header.json')
 
 const handleFields = async () => {
 	const items = []
@@ -94,6 +93,7 @@ module.exports.fields = async () => {
 const template = Handlebars.compile(source)
 
 let toRender = ''
+const currentValueOfHeader = jsonfile.readFileSync('./src/input/header.json')
 if (currentValueOfHeader[modelId]) {
 	markdownIt(currentValueOfHeader[modelId])
 
@@ -108,8 +108,7 @@ if (currentValueOfHeader[modelId]) {
 }
 
 const result = template({
-	FIELD: toRender,
-	path: `${process.env.PWD}/src/input/preview`
+	FIELD: toRender
 })
 try {
 	fs.writeFileSync(outFile, entities.decode(result))

@@ -25,7 +25,7 @@ module.exports.errorAction = reason => {
 			break
 		case 'main':
 			title = 'Working without AnkiConnect'
-			subtitle = '↵ Continue work | ⇧↵ to open Anki. | ⌘L to see the stack trace'
+			subtitle = '⇧↵ to open Anki.'
 			text = {largetype: subtitle}
 			autocomplete = ''
 			break
@@ -56,24 +56,24 @@ module.exports.errorAction = reason => {
 			break
 		case '!deck decks':
 			title = null
-			subtitle = '↵ Continue work | ⇧↵ to open Anki. | ⌘L to see the stack trace'
+			subtitle = '⇧↵ to open Anki. | ⌘L to see the stack trace'
 			text = {largetype: subtitle}
 			autocomplete = '!deck '
 			break
 		case '!model models':
 			title = null
-			subtitle = '↵ Continue work | ⇧↵ to open Anki. | ⌘L to see the stack trace'
+			subtitle = '⇧↵ to open Anki. | ⌘L to see the stack trace'
 			text = {largetype: subtitle}
 			autocomplete = '!model '
 			break
 		case '!del decks':
 			title = null
-			subtitle = '↵ Continue work | ⇧↵ to open Anki. | ⌘L to see the stack trace'
+			subtitle = '⇧↵ to open Anki. | ⌘L to see the stack trace'
 			text = {largetype: subtitle}
 			autocomplete = '!del '
 			break
 		case 'alfred-settings':
-			title = 'set some Profile name in Alfred settings'
+			title = 'set some Profile for Workflow'
 			subtitle = `Pres ⇤ (tab) to pick out the profile by the given value.. Or ⇧↵ to open Anki & choose another`
 			autocomplete = '!profile default-profile '
 			break
