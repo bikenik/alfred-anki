@@ -54,7 +54,7 @@ const handleFields = async () => {
 		item.subtitle = field
 		item.arg = ''
 		item.quicklookurl = `${config.mediaDir}/_preview.html`
-		item.icon = alfy.config.get('fields')[modelId][field] === 'rli' ? fs.existsSync(`./icons/${field}.png`) ? `./icons/${field}_marked.png` : './icons/flag_marked.png' : fs.existsSync(`./icons/${field}.png`) ? `./icons/${field}.png` : './icons/flag.png'
+		item.icon = alfy.config.get('fields') && alfy.config.get('fields')[modelId][field] === 'rli' ? fs.existsSync(`./icons/${field}.png`) ? `./icons/${field}_marked.png` : './icons/flag_marked.png' : fs.existsSync(`./icons/${field}.png`) ? `./icons/${field}.png` : './icons/flag.png'
 		item.variables = variables(field)
 		item.mods = mods(field)
 		items.push(item.getProperties())
@@ -77,11 +77,16 @@ const handleFields = async () => {
 }
 
 module.exports.fields = async () => {
+	let result
 	await getProfileName()
 	const ankiInfoRes = await ankiInfo()
 	const fields = await handleFields()
 	fields.unshift(ankiInfoRes[0] ? ankiInfoRes[0] : ankiInfoRes)
-	const result = alfy.inputMatches(fields, 'subtitle')
+	if (fields && fields[0] && fields[0].subtitle && fields[0].name === 'intro') {
+		result = alfy.inputMatches(fields, 'subtitle')
+	} else {
+		result = await ankiInfo()
+	}
 
 	return result
 }

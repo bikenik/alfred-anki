@@ -1,11 +1,14 @@
 const {XMLHttpRequest} = require('xmlhttprequest')
 const Promise = require('promise')
 
+const WorkflowError = require('../utils/error')
+const {errorAction} = require('../utils/error')
+
 module.exports = function (action, version, params) {
 	return new Promise((resolve, reject) => {
 		const xhr = new XMLHttpRequest()
 		xhr.addEventListener('error', () =>
-			reject(new Error('failed to connect to AnkiConnect'))
+			reject(new WorkflowError(errorAction('main').title, errorAction('main')))
 		)
 		xhr.addEventListener('load', () => {
 			try {

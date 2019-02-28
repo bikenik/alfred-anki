@@ -11,15 +11,15 @@ const ankiConnect = require('../anki/anki-connect')
 const user = os.userInfo()
 
 const getProfileName = async () => {
-	try {
-		const getProfileName = fs.existsSync(`${user.homedir}/Library/Application Support/Anki2/${alfy.config.get('default-profile')}/collection.media`) ? alfy.config.get('default-profile') : false
-		if (typeof (getProfileName) === 'string') {
+	const getProfileName = fs.existsSync(`${user.homedir}/Library/Application Support/Anki2/${alfy.config.get('default-profile')}/collection.media`) ? alfy.config.get('default-profile') : false
+	if (typeof (getProfileName) === 'string') {
+		try {
 			await ankiConnect('loadProfile', 6, {name: alfy.config.get('default-profile')})
-		} else {
-			alfy.config.set('default-profile', getProfileName)
+		} catch (error) {
+			throw new WorkflowError(error, errorAction('main'))
 		}
-	} catch (error) {
-		throw new WorkflowError(error, errorAction('main'))
+	} else {
+		alfy.config.set('default-profile', getProfileName)
 	}
 }
 
@@ -75,6 +75,9 @@ const cmd = {
 	},
 	profiles: {
 		'default-profile': 'choose ...'
+	},
+	reset: {
+		'reseting...': 'reset it ...'
 	}
 }
 

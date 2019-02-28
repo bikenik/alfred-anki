@@ -9,7 +9,7 @@ const fileAnkiProfiles = './src/input/anki-profiles.json'
 module.exports = async () => {
 	try {
 		const result = await ankiConnect('loadProfile', 6,
-			{name: alfy.config.get('default-profile')})
+			{name: alfy.config.get('default-profile') ? alfy.config.get('default-profile') : 'Hello world'})
 
 		jsonfile.writeFile(fileAnkiProfiles, result === false ? [] : typeof (result) === 'boolean' ? [] : result, {
 			spaces: 2

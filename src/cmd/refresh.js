@@ -6,6 +6,7 @@ const alfy = require('alfy')
 const config = require('../config').cmd
 const decks = require('../anki/anki-decks')
 const models = require('../anki/anki-models')
+const profiles = require('../anki/anki-profiles')
 const WorkflowError = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
 const {cards, areDue, areSuspend} = require('../anki/anki-cards')
@@ -25,6 +26,7 @@ const runUpdate = async () => {
 	const ankiDecks = await decks()
 	const ankiModels = await models()
 	const ankiCardsCount = await cards(ankiDecks)
+	await profiles()
 	/* eslint-disable no-await-in-loop */
 	for (let i = 0; i < ankiCardsCount.length; i++) {
 		const elem = await areDue(ankiCardsCount[i])

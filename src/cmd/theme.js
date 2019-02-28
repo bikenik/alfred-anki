@@ -1,4 +1,3 @@
-/* eslint-disable camelcase */
 'use strict'
 const fs = require('fs-extra')
 const alfy = require('alfy')
@@ -78,20 +77,16 @@ module.exports = async input => {
 		})
 	}
 
-	const value = chunks.slice(2).join(' ')
 	if (chunks.length >= 3) {
 		return [{
 			title: 'Icons have been overwritten',
 			subtitle: 'hit ↵ to go home',
-			valid: false,
+			valid: true,
 			autocomplete: '',
 			arg: JSON.stringify({
 				alfredworkflow: {
-					autocomplete: '!',
 					variables: {
-						action: 'refresh',
-						config_variable: variableName,
-						config_value: value
+						action: 'change-theme-icons'
 					},
 					arg: await copyFiles()
 				}

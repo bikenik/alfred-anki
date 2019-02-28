@@ -5,14 +5,16 @@ const decks = require('../anki/anki-decks')
 const {errorAction} = require('../utils/error')
 const config = require('../config').card
 const {modelExist} = require('./anki-models')
+const ankiConnect = require('./anki-connect')
 
 const fileAnkiDecks = './src/input/anki-decks.json'
 const model = alfy.config.get('default-model') ? Object.keys(alfy.config.get('default-model'))[0] : null
 
 module.exports = async () => {
 	const introMessage = [{
-		subtitle: alfy.config.get('default-deck') ? `🧰 ${alfy.config.get('default-deck')}    ⚒ ${model}    👤 ${alfy.config.get('default-profile')}` : '',
+		name: 'intro',
 		title: alfy.config.get('default-deck') ? 'Create new card (⌘ + ↵)' : 'press ↵ or ↹ to select default deck',
+		subtitle: alfy.config.get('default-deck') ? `🧰 ${alfy.config.get('default-deck')}    ⚒ ${model}    👤 ${alfy.config.get('default-profile')}` : '',
 		icon: {path: './icons/anki.png'},
 		autocomplete: '!deck default-deck ',
 		valid: false,
@@ -38,6 +40,7 @@ module.exports = async () => {
 	}]
 	const ankiModelExist = await modelExist()
 	if (alfy.config.get('default-profile') === false) {
+		await ankiConnect('version', 6)
 		return [errorAction('alfred-settings')]
 	}
 

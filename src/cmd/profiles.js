@@ -1,5 +1,3 @@
-/* eslint-disable capitalized-comments */
-
 const alfy = require('alfy')
 const WorkflowError = require('../utils/error')
 const {errorAction} = require('../utils/error')
@@ -61,16 +59,13 @@ module.exports = input => {
 			autocomplete: '!profile '
 		})
 	}
-	// for (let i = 2; i < chunks.length; i++) {
-	// 	chunks[i] = chunks[i].charAt(0).toUpperCase() + chunks[i].slice(1)
-	// }
 
-	// value.split('-').forEach(x => {x.charAt(0).toUpperCase() + x.slice(1)}).join('-'),
 	const variable = variables[variableName]
 	const value = chunks.slice(2).join(' ')
 	const arrayOfProfiles = ankiProfiles
 
 	if (chunks.length >= 3) {
+		variable.outputOptions()
 		return (async () => {
 			if (await profiles() === null) {
 				throw new WorkflowError('Profiles was not found, type excisting name', errorAction('!profile profiles'))

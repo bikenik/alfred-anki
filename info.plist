@@ -47,6 +47,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>16E77EDF-F1CB-4F48-BB70-A5EBC420693C</key>
+		<array/>
 		<key>2C87ECB2-70AF-429F-90EA-C89E93DCB148</key>
 		<array>
 			<dict>
@@ -206,6 +208,16 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>5CC8BE37-69CC-43B2-90D0-C1D3B03FCB5F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>94AAD358-0F71-4EC8-8C0B-71C1409F85A2</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -478,6 +490,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>94AAD358-0F71-4EC8-8C0B-71C1409F85A2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A63E0832-37B4-49C3-A8CF-8D0B02D75DE6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>95BE8DC6-2A86-4AEC-BCC4-4E9D459D4076</key>
 		<array>
 			<dict>
@@ -491,8 +516,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>97750D9D-0943-4182-83E3-A8372E8F5BC6</key>
-		<array/>
 		<key>9C59315A-EBF3-4624-A015-3CBD7CD88BE2</key>
 		<array>
 			<dict>
@@ -1147,9 +1170,9 @@
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>1572864</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>A</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1508,6 +1531,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>inputstring</key>
+				<string>{var:action}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>change-theme-icons</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>94AAD358-0F71-4EC8-8C0B-71C1409F85A2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>lastpathcomponent</key>
 				<false/>
 				<key>onlyshowifquerypopulated</key>
@@ -1523,6 +1565,14 @@
 			<string>alfred.workflow.output.notification</string>
 			<key>uid</key>
 			<string>924BB709-C6AF-41F4-86D4-FE8E4D00E6B1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.hidealfred</string>
+			<key>uid</key>
+			<string>A63E0832-37B4-49C3-A8CF-8D0B02D75DE6</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1601,32 +1651,6 @@
 			<string>16E77EDF-F1CB-4F48-BB70-A5EBC420693C</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>function run(argv) {
-  var query = process.env;
-  return query;
-}</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>7</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>97750D9D-0943-4182-83E3-A8372E8F5BC6</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2534,19 +2558,19 @@ To RESET</string>
 			<key>ypos</key>
 			<integer>780</integer>
 		</dict>
+		<key>94AAD358-0F71-4EC8-8C0B-71C1409F85A2</key>
+		<dict>
+			<key>xpos</key>
+			<integer>700</integer>
+			<key>ypos</key>
+			<integer>700</integer>
+		</dict>
 		<key>95BE8DC6-2A86-4AEC-BCC4-4E9D459D4076</key>
 		<dict>
 			<key>xpos</key>
 			<integer>390</integer>
 			<key>ypos</key>
 			<integer>1560</integer>
-		</dict>
-		<key>97750D9D-0943-4182-83E3-A8372E8F5BC6</key>
-		<dict>
-			<key>xpos</key>
-			<integer>860</integer>
-			<key>ypos</key>
-			<integer>970</integer>
 		</dict>
 		<key>9C59315A-EBF3-4624-A015-3CBD7CD88BE2</key>
 		<dict>
@@ -2573,6 +2597,13 @@ RESET FIELDS</string>
 			<integer>1080</integer>
 			<key>ypos</key>
 			<integer>400</integer>
+		</dict>
+		<key>A63E0832-37B4-49C3-A8CF-8D0B02D75DE6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1060</integer>
+			<key>ypos</key>
+			<integer>790</integer>
 		</dict>
 		<key>A64BC663-F93F-4363-8F54-5A92B480F3FD</key>
 		<dict>
@@ -2804,7 +2835,7 @@ To RESET</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1.5</string>
+	<string>1.1.6</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-anki#readme</string>
 </dict>

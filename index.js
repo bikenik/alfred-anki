@@ -8,10 +8,12 @@ const refresh = require('./src/cmd/refresh')
 const theme = require('./src/cmd/theme')
 const models = require('./src/cmd/models')
 const profiles = require('./src/cmd/profiles')
+const reset = require('./src/cmd/reset')
 const ankiInfo = require('./src/anki/anki-info')
 const wf = require('./src/wf')
+const WorkflowError = require('./src/utils/error')
 
-const commands = [set, models, profiles, del, refresh, theme]
+const commands = [set, models, profiles, del, refresh, theme, reset]
 const option = async input => {
 	for (const command of commands) {
 		if (command.match(input)) {
@@ -64,6 +66,12 @@ if (!alfy.cache.get('start-PID')) {
 			alfy.output(out)
 		}
 	} catch (error) {
-		alfy.output(await ankiInfo())
+		if (error.title === 'Working without AnkiConnect') {
+			alfy.output([error])
+		} else if (error.message) {
+			throw new WorkflowError(error.stack)
+		} else {
+			await ankiInfo()
+		}
 	}
 })()
