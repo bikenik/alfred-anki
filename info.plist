@@ -1972,25 +1972,6 @@ printf $tmp</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>inputstring</key>
-				<string>{var:focusedapp}</string>
-				<key>matchcasesensitive</key>
-				<true/>
-				<key>matchmode</key>
-				<integer>0</integer>
-				<key>matchstring</key>
-				<string>com.runningwithcrayons.Alfred-3</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.filter</string>
-			<key>uid</key>
-			<string>276BF00D-2634-4E5E-8170-0229205F108B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
@@ -2054,15 +2035,6 @@ printf $tmp</string>
 			<integer>1730</integer>
 			<key>ypos</key>
 			<integer>340</integer>
-		</dict>
-		<key>276BF00D-2634-4E5E-8170-0229205F108B</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>3</integer>
-			<key>xpos</key>
-			<integer>580</integer>
-			<key>ypos</key>
-			<integer>1680</integer>
 		</dict>
 		<key>2C87ECB2-70AF-429F-90EA-C89E93DCB148</key>
 		<dict>
