@@ -1,15 +1,15 @@
 /* eslint-disable capitalized-comments */
 
 const alfy = require('alfy')
-const jsonfile = require('jsonfile')
 
 const WorkflowError = require('../utils/error')
 const {errorAction} = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
 const config = require('../config').cmd
 const decks = require('../anki/anki-decks')
+const ankiCards = require('../input/anki-cards.json')
 
-const ankiCards = jsonfile.readFileSync('./src/input/anki-cards.json')
+// const ankiCards = jsonfile.readFileSync('./src/input/anki-cards.json')
 
 const variables = {
 	'default-deck': {

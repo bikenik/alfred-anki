@@ -32,13 +32,15 @@ if (process.env.action === 'reset-for-next-card' && modelId) {
 			if (key === key2 && currentConfig[key2] === 'not_rli') {
 				header[key] = ''
 			}
-		}
-	}
 
-	if (alfy.config.get('Tag') === 'rli') {
-		header.Tag = headerJson.Tag
-	} else if (alfy.config.get('Tag') === 'not_rli') {
-		header.Tag = ''
+			if (key === 'Tag' && alfy.config.get('Tag') === 'rli') {
+				header[key] = headerJson[modelId].Tag
+			}
+
+			if (key === 'Tag' && alfy.config.get('Tag') === 'not_rli') {
+				header[key] = ''
+			}
+		}
 	}
 
 	headerJson[modelId] = header

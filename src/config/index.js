@@ -3,10 +3,11 @@
 const fs = require('fs')
 const os = require('os')
 const alfy = require('alfy')
-const {modelExist} = require('../anki/anki-models')
 const WorkflowError = require('../utils/error')
 const {errorAction} = require('../utils/error')
 const ankiConnect = require('../anki/anki-connect')
+
+const modelFieldNames = require('../input/anki-model-fields.json')
 
 const user = os.userInfo()
 
@@ -22,21 +23,6 @@ const getProfileName = async () => {
 		alfy.config.set('default-profile', getProfileName)
 	}
 }
-
-/* -----------------------------
-To prevent unknown case that invokes this error when settings new deck or model
-with many random charachters which typing very quickly.
-> "SyntaxError: alfred-anki/src/input/anki-model-fields.json: Unexpected end of JSON input"
-------------------------------- */
-let modelFieldNames
-try {
-	modelFieldNames = require('../input/anki-model-fields.json')
-} catch (error) {
-	(async () => {
-		await modelExist()
-	})()
-}
-/* --------------------------- */
 
 const path_to_ankiMedia = () => alfy.config.get('default-profile') ? `/Library/Application Support/Anki2/${alfy.config.get('default-profile')}/collection.media/` : ''
 
