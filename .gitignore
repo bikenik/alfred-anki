@@ -63,6 +63,7 @@ typings/
 #other dev tools
 *.codekit3
 .editorconfig
+settings.json
 
 #temporary folder
 
