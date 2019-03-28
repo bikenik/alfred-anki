@@ -2,6 +2,7 @@
 'use strict'
 const hljs = require('highlight.js')
 const md = require('markdown-it')({
+	breaks: true,
 	highlight: (str, lang) => {
 		if (lang && hljs.getLanguage(lang)) {
 			try {
