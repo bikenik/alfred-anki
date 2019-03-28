@@ -4,6 +4,7 @@
 
 ![main window](./readme/main-window.png)
 ![main window](./readme/settings-window.png)
+![main window](./readme/preview-of-card-field.png)
 
 ## Install
 
