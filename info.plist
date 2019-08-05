@@ -2507,6 +2507,8 @@ To RESET</string>
 			<integer>1530</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
 	<string>1.3.0</string>
 	<key>webaddress</key>
