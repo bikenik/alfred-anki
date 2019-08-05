@@ -9,7 +9,8 @@ const pMap = require('p-map')
 const {markdownIt} = require('./utils/engine')
 const ankiAddCard = require('./anki/anki-add-card')
 const config = require('./config').card
-const modelFieldNames = require('./input/anki-model-fields.json')
+
+const modelFieldNames = require(`${process.env.alfred_workflow_data}/anki-model-fields.json`)
 
 const modelId = alfy.config.get('default-model') ? alfy.config.get('default-model')[Object.keys(alfy.config.get('default-model'))[0]] : null
 

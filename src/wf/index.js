@@ -8,8 +8,9 @@ const {getProfileName} = require('../config')
 const ankiInfo = require('../anki/anki-info')
 const {Render} = require('../utils/engine')
 const {markdownIt} = require('../utils/engine')
-const header = require('../input/header.json')
-const modelFieldNames = require('../input/anki-model-fields.json')
+
+const header = require(`${process.env.alfred_workflow_data}/header.json`)
+const modelFieldNames = require(`${process.env.alfred_workflow_data}/anki-model-fields.json`)
 
 const entities = new Entities()
 
@@ -93,7 +94,7 @@ module.exports.fields = async () => {
 const template = Handlebars.compile(source)
 
 let toRender = ''
-const currentValueOfHeader = jsonfile.readFileSync('./src/input/header.json')
+const currentValueOfHeader = jsonfile.readFileSync(`${process.env.alfred_workflow_data}/header.json`)
 if (currentValueOfHeader[modelId]) {
 	markdownIt(currentValueOfHeader[modelId])
 

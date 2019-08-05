@@ -3,7 +3,8 @@ const fs = require('fs')
 const alfy = require('alfy')
 const {getTags} = require('../anki/anki-tags')
 const {Render} = require('../utils/engine')
-const modelFieldNames = require('../input/anki-model-fields.json')
+
+const modelFieldNames = require(`${process.env.alfred_workflow_data}/anki-model-fields.json`)
 
 /* eslint-disable-next-line no-use-extend-native/no-use-extend-native */
 String.prototype.replaceAll = function (search, replacement) {

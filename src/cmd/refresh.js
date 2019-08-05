@@ -11,8 +11,9 @@ const WorkflowError = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
 const {cards, areDue, areSuspend} = require('../anki/anki-cards')
 
-const fileAnkiCards = './src/input/anki-cards.json'
-const fileAnkiModels = './src/input/anki-models.json'
+const envOfWF = process.env.alfred_workflow_data
+const fileAnkiCards = `${envOfWF}/anki-cards.json`
+const fileAnkiModels = `${envOfWF}/anki-models.json`
 const cards2Json = {}
 
 const variables = {

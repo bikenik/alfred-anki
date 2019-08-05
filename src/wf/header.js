@@ -4,9 +4,10 @@
 
 const alfy = require('alfy')
 const jsonfile = require('jsonfile')
-const headerJson = require('../input/header.json')
 
-const fileHeader = './src/input/header.json'
+const fileHeader = `${process.env.alfred_workflow_data}/header.json`
+const headerJson = require(fileHeader)
+
 const modelId = alfy.config.get('default-model') ? alfy.config.get('default-model')[Object.keys(alfy.config.get('default-model'))[0]] : null
 const currentConfig = alfy.config.get('fields') ? alfy.config.get('fields')[modelId] : null
 

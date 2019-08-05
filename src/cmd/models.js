@@ -6,7 +6,8 @@ const {errorAction} = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
 const config = require('../config').cmd
 const models = require('../anki/anki-models')
-const ankiModels = require('../input/anki-models.json')
+
+const ankiModels = require(`${process.env.alfred_workflow_data}/anki-models.json`)
 
 const variables = {
 	'default-model': {

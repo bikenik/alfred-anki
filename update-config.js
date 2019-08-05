@@ -1,8 +1,8 @@
 const alfy = require('alfy')
 
 const {modelExist} = require('./src/anki/anki-models')
-const modelFieldNames = require('./src/input/anki-model-fields.json')
 
+const modelFieldNames = require(`${process.env.alfred_workflow_data}/anki-model-fields.json`)
 const {env} = process
 
 const toggle = (field, fields) => {

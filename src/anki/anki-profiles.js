@@ -4,7 +4,7 @@ const jsonfile = require('jsonfile')
 
 const ankiConnect = require('./anki-connect')
 
-const fileAnkiProfiles = './src/input/anki-profiles.json'
+const fileAnkiProfiles = `${process.env.alfred_workflow_data}/anki-profiles.json`
 
 module.exports = async () => {
 	try {

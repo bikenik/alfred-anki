@@ -1,13 +1,34 @@
 /* eslint camelcase: ["error", {properties: "never"}] */
 /* eslint-disable camelcase */
-const fs = require('fs')
 const os = require('os')
+const fs = require('fs-extra')
+
 const alfy = require('alfy')
 const WorkflowError = require('../utils/error')
 const {errorAction} = require('../utils/error')
 const ankiConnect = require('../anki/anki-connect')
 
-const modelFieldNames = require('../input/anki-model-fields.json')
+const createJsonFile = async db => {
+	try {
+		await fs.readJson(db)
+	} catch {
+		try {
+			await fs.outputJson(db, [])
+		} catch (error) {
+			throw new WorkflowError(error.stack)
+		}
+	}
+}
+
+const envOfWF = process.env.alfred_workflow_data
+createJsonFile(`${envOfWF}/anki-cards.json`)
+createJsonFile(`${envOfWF}/anki-decks.json`)
+createJsonFile(`${envOfWF}/anki-model-fields.json`)
+createJsonFile(`${envOfWF}/anki-models.json`)
+createJsonFile(`${envOfWF}/anki-profiles.json`)
+createJsonFile(`${envOfWF}/header.json`)
+
+const modelFieldNames = require(`${process.env.alfred_workflow_data}/anki-model-fields.json`)
 
 const user = os.userInfo()
 
@@ -36,7 +57,7 @@ const fields = () => {
 
 const card = {
 	concurrency: 10,
-	input: './src/input/header.json',
+	input: `${process.env.alfred_workflow_data}/header.json`,
 	fields: fields(),
 	get mediaDir() {
 		return user.homedir + path_to_ankiMedia()

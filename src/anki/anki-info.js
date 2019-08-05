@@ -7,7 +7,7 @@ const config = require('../config').card
 const {modelExist} = require('./anki-models')
 const ankiConnect = require('./anki-connect')
 
-const fileAnkiDecks = './src/input/anki-decks.json'
+const fileAnkiDecks = `${process.env.alfred_workflow_data}/anki-decks.json`
 const model = alfy.config.get('default-model') ? Object.keys(alfy.config.get('default-model'))[0] : null
 
 module.exports = async () => {

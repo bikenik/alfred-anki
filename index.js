@@ -1,6 +1,7 @@
 'use strict'
 const alfy = require('alfy')
 const runApplescript = require('run-applescript')
+
 const set = require('./src/cmd/decks')
 const del = require('./src/cmd/del')
 const refresh = require('./src/cmd/refresh')
@@ -48,7 +49,7 @@ if (!alfy.cache.get('start-PID')) {
 	try {
 		if (alfy.cache.get('start-PID') === process.pid) {
 			await runApplescript(`
-				tell application "Alfred 3"
+				tell application "Alfred 4"
 					run trigger ¬
 						"refresh" in workflow ¬
 						"org.bikenik.anki"

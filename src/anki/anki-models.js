@@ -8,7 +8,7 @@ const ankiConnect = require('./anki-connect')
 
 const note_type = alfy.config.get('default-model') ? Object.keys(alfy.config.get('default-model'))[0] : null
 
-const fileAnkiModelFields = './src/input/anki-model-fields.json'
+const fileAnkiModelFields = `${process.env.alfred_workflow_data}/anki-model-fields.json`
 
 module.exports = async () => {
 	try {

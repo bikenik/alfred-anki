@@ -5,7 +5,7 @@ const {hasOwnProperty} = require('../utils')
 const config = require('../config').cmd
 const profiles = require('../anki/anki-profiles')
 
-const ankiProfiles = require('../input/anki-profiles.json')
+const ankiProfiles = require(`${process.env.alfred_workflow_data}/anki-profiles.json`)
 
 const variables = {
 	'default-profile': {

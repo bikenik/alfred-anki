@@ -7,9 +7,8 @@ const {errorAction} = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
 const config = require('../config').cmd
 const decks = require('../anki/anki-decks')
-const ankiCards = require('../input/anki-cards.json')
 
-// const ankiCards = jsonfile.readFileSync('./src/input/anki-cards.json')
+const ankiCards = require(`${process.env.alfred_workflow_data}/anki-cards.json`)
 
 const variables = {
 	'default-deck': {

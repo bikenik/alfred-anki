@@ -7,12 +7,13 @@ const config = require('../config').cmd
 const WorkflowError = require('../utils/error')
 const {hasOwnProperty} = require('../utils')
 
-const fileHeader = './src/input/header.json'
-const fileDecks = './src/input/anki-decks.json'
-const fileCards = './src/input/anki-cards.json'
-const fileModelFields = './src/input/anki-model-fields.json'
-const fileModels = './src/input/anki-models.json'
-const fileProfiles = './src/input/anki-profiles.json'
+const envOfWF = process.env.alfred_workflow_data
+const fileHeader = `${envOfWF}/header.json`
+const fileDecks = `${envOfWF}/anki-decks.json`
+const fileCards = `${envOfWF}/anki-cards.json`
+const fileModelFields = `${envOfWF}/anki-model-fields.json`
+const fileModels = `${envOfWF}/anki-models.json`
+const fileProfiles = `${envOfWF}/anki-profiles.json`
 
 const variables = {
 	'reseting...': {

@@ -31,24 +31,25 @@
 		"alfy"
 	],
 	"dependencies": {
-		"alfy": "0.8.0",
-		"fs-extra": "^7.0.1",
-		"handlebars": "^4.1.0",
-		"highlight.js": "^9.14.2",
+		"alfy": "0.9.0",
+		"fs-extra": "^8.1.0",
+		"handlebars": "^4.1.2",
+		"highlight.js": "^9.15.8",
 		"html-entities": "^1.2.1",
 		"jsonfile": "^5.0.0",
-		"markdown-it": "^8.4.2",
+		"markdown-it": "^9.0.1",
 		"markdown-it-abbr": "^1.0.4",
 		"markdown-it-emoji": "^1.4.0",
 		"markdown-it-ins": "^2.0.0",
 		"markdown-it-mark": "^2.0.0",
-		"p-map": "^2.0.0",
-		"promise": "^8.0.2",
+		"p-map": "^3.0.0",
+		"path-exists": "^4.0.0",
+		"promise": "^8.0.3",
 		"run-applescript": "^3.2.0",
 		"xmlhttprequest": "^1.8.0"
 	},
 	"devDependencies": {
-		"ava": "^1.2.1",
+		"ava": "^2.2.0",
 		"xo": "^0.24.0"
 	},
 	"xo": {

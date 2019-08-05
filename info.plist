@@ -679,6 +679,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D6A58C8E-76B1-4B21-A512-27424CF8E50B</key>
+		<array/>
 		<key>D911C0B6-8115-460C-89BA-9C9A7C0CB9D6</key>
 		<array>
 			<dict>
@@ -1017,6 +1019,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1053,7 +1057,7 @@
 			<key>uid</key>
 			<string>75FCBB30-CC79-454C-A038-B63F930D9BC8</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1069,9 +1073,9 @@
 				<key>hotkey</key>
 				<integer>0</integer>
 				<key>hotmod</key>
-				<integer>0</integer>
+				<integer>1572864</integer>
 				<key>hotstring</key>
-				<string></string>
+				<string>A</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -1175,6 +1179,10 @@
 				<integer>1</integer>
 				<key>matchstring</key>
 				<string>!err:(.*?\.)\s.*</string>
+				<key>regexcaseinsensitive</key>
+				<false/>
+				<key>regexmultiline</key>
+				<false/>
 				<key>replacestring</key>
 				<string>$1</string>
 			</dict>
@@ -1183,7 +1191,7 @@
 			<key>uid</key>
 			<string>8786E11F-9169-4F88-863F-15A30263717C</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1192,6 +1200,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1230,7 +1240,7 @@
 			<key>uid</key>
 			<string>487DCA31-FA43-4421-B268-93183B4FC353</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1239,6 +1249,8 @@
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
@@ -1275,7 +1287,7 @@
 			<key>uid</key>
 			<string>46444138-C3AC-4805-A574-C1F1B70D7EDB</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1312,25 +1324,6 @@
 			<string>B7625B29-64C5-4BA2-B97B-83BE2F4B6192</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>externaltriggerid</key>
-				<string>anki</string>
-				<key>passinputasargument</key>
-				<false/>
-				<key>passvariables</key>
-				<false/>
-				<key>workflowbundleid</key>
-				<string>self</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.callexternaltrigger</string>
-			<key>uid</key>
-			<string>332408A1-AB50-438A-B81C-53977A92FC49</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1384,6 +1377,25 @@
 			<string>alfred.workflow.utility.filter</string>
 			<key>uid</key>
 			<string>ADACAE15-F887-454C-99CD-CBEC20560AB6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>anki</string>
+				<key>passinputasargument</key>
+				<false/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>332408A1-AB50-438A-B81C-53977A92FC49</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1841,14 +1853,14 @@ printf $tmp</string>
 				<key>clipboardtext</key>
 				<string>![img]({query}.png)</string>
 				<key>transient</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.output.clipboard</string>
 			<key>uid</key>
 			<string>B8286172-11CE-47C6-9815-BC7492B2A31B</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1898,7 +1910,7 @@ printf $tmp</string>
 				<key>matchmode</key>
 				<integer>0</integer>
 				<key>matchstring</key>
-				<string>com.runningwithcrayons.Alfred-3</string>
+				<string>com.runningwithcrayons.Alfred</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.filter</string>
@@ -1984,7 +1996,7 @@ printf $tmp</string>
 			<key>uid</key>
 			<string>D6A58C8E-76B1-4B21-A512-27424CF8E50B</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -2059,7 +2071,7 @@ printf $tmp</string>
 			<key>colorindex</key>
 			<integer>3</integer>
 			<key>xpos</key>
-			<integer>320</integer>
+			<integer>330</integer>
 			<key>ypos</key>
 			<integer>1560</integer>
 		</dict>
@@ -2068,9 +2080,9 @@ printf $tmp</string>
 			<key>colorindex</key>
 			<integer>9</integer>
 			<key>xpos</key>
-			<integer>1080</integer>
+			<integer>1095</integer>
 			<key>ypos</key>
-			<integer>560</integer>
+			<integer>600</integer>
 		</dict>
 		<key>3533497B-3633-4BB9-94DF-FB47E1DB26EA</key>
 		<dict>
@@ -2413,7 +2425,7 @@ MAKE CARD</string>
 		<key>D6A58C8E-76B1-4B21-A512-27424CF8E50B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>400</integer>
+			<integer>390</integer>
 			<key>ypos</key>
 			<integer>1680</integer>
 		</dict>
@@ -2496,7 +2508,7 @@ To RESET</string>
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.2.3</string>
+	<string>1.3.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/bikenik/alfred-anki#readme</string>
 </dict>
