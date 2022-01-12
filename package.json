@@ -37,7 +37,7 @@
 		"highlight.js": "^9.15.8",
 		"html-entities": "^1.2.1",
 		"jsonfile": "^5.0.0",
-		"markdown-it": "^9.0.1",
+		"markdown-it": "^12.3.2",
 		"markdown-it-abbr": "^1.0.4",
 		"markdown-it-emoji": "^1.4.0",
 		"markdown-it-ins": "^2.0.0",
